@@ -1,0 +1,150 @@
+%\documentclass[10pt,conference]{IEEEtran}
+
+\documentclass[10 pt,final]{article}
+
+\usepackage{amssymb} \usepackage{amsmath} \usepackage{amsthm} \usepackage{algorithm} \usepackage{algorithmic} \usepackage{url} \usepackage[margin=1in]{geometry}
+
+\usepackage{subfigure}
+
+\newtheorem{theorem}{Theorem} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{definition}{Definition} \newtheorem{assumption}{Assumption} \newtheorem{example}{Example}
+\newtheorem{observation}[theorem]{Observation}
+%\newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \newtheorem{remark}{Remark} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{fact}{Fact} \newtheorem{invariant}{Invariant}
+
+\usepackage{color}
+\newcounter{todocounter}
+\newcommand{\todo}[1]{\stepcounter{todocounter}\textcolor{red}{to-do\#\arabic{todocounter}: #1}}
+\newcommand{\impo}[1]{{\color{magenta} #1}}
+\newcommand{\question}[1]{{\color{blue} #1}}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{./Figures/}}
+
+\title{Chap 1: Introduction to Probability Theory }
+
+
+\begin{document}
+
+
+
+%\author{Huangxin Wang\thanks{Department of Computer Science, George Mason University. Fairfax, VA 22030. Email: \textsf{hwang14@gmu.edu}}}
+\date{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sample Space and Events}
+
+\paragraph{Sample Space} the set of all possible outcomes of an experiment.
+
+Let $E$, $F$, $G$ be three events, then we have
+
+\section{Probabilities Defined on Events}
+
+\begin{flalign*}
+P(E \cup F \cup G) & = &  \\
+& =  P(E) + P(F) - P(EF) + P(G) - P(EG \cup FG)& \\
+& =  P(E) + P(F) - P(EF) + P(G) - P(EG) - P(FG) + P(EGFG) & \\
+& =  P(E) + P(F) + P(G) - P(EF) - P(EG) - P(FG) + P(EFG) &
+\end{flalign*}
+
+It can be shown by induction that, for any $n$ events $E_1, E_2, \cdots, E_n$, 
+
+\begin{flalign*}
+P(E_1 \cup E_2 \cup \cdots \cup E_n) = & \sum_i P(E_i) - \sum_{i \le j} P(E_i E_j) + \sum_{i \le j \le k} P(E_i E_j E_k) & \\
+& - \sum_{i \le j \le k \le l} P(E_i E_j E_k E_l) + & \\
+& + \cdots + (-1)^{n+1} P(E_1 E_2 \cdots E_n) &
+\end{flalign*}
+
+\section{Conditional Probability}
+If we know event $F$ has happened, then our sample space become $F$. And hence the probability that event $EF$ occurs will equal the probability that $EF$ relative to the probability of $F$. That is,
+\begin{align*}
+P(E|F) = & \frac{P(EF)}{P(F)} &
+\end{align*}
+
+\paragraph{\impo{Example}} Suppose that each of three men at a party throws his hat into center of the room. The hats are first mixed up and then each man randomly selects a hat. What is the probability that non of the three man selects his own hat?
+
+\paragraph{Solution:} We shall solve this by first calculating the complementary probability that at least one man selects his own hat. Let us denote by $E_i, i =1,2,3,$ the event that the $i$-th man selects his own hat. To calculate probability $P(E_1 E_2 E_3)$, we first note that 
+\begin{align*}
+P(E_i) = \frac{1}{3}, i= 1,2,3 \\
+P(E_i E_j) = \frac{1}{6}, i \neq j \\
+P(E_1 E_2 E_3) = \frac{1}{6} 
+\end{align*}
+
+Here is the detail of calculation
+\begin{align*}
+P(E_i E_j) = P(E_i) * P(E_j | E_i) = \frac{1}{3} \cdot \frac{1}{2} = \frac{1}{6} \\
+P(E_1 E_2 E_3) = P(E_1 E_2) *P(E_3 | E_1 E_2) = \frac{1}{6}*1 = \frac{1}{6}
+\end{align*}
+
+\impo{Therefore, we have}
+\begin{align*}
+P(E_1 \cup E_2 \cup E_3) = & P(E_1) + P(E_2) + P(E_3) - P(E_1 E_2) & \\
+& - P(E_1 E_3) - P(E_2 E_3) + P(E_1 E_2 E_3) &\\
+= & 1 - \frac{1}{2} + \frac{1}{6} & \\
+= & \frac{2}{3} &
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Independent Events}
+\paragraph{Independent Events} The events $E_1, E_2, \cdots, E_n$ are independent if knowledge of the occurrence of any of these events has no effect on the probability of any other event.
+\begin{align*}
+P(E_1 E_2 \cdots E_n) = P(E_1) * P(E_2) \cdots * P(E_n)
+\end{align*}
+
+\paragraph{Pairwise Independent Events That Are Not Independent} Let a ball be drawn from an urn containing four balls, numbered $1,2,3,4$. Let $E = {1,2}, F={1,3}, G={1,4}$. If all four outcomes are assumed equally likely, then 
+\begin{align*}
+P(EF) = P(E) * P(F) = \frac{1}{4} \\
+P(EG) = P(E) * P(G) = \frac{1}{4} \\
+P(FG) = P(F) * P(G) = \frac{1}{4} \\
+\end{align*}
+
+However,
+\begin{align*}
+\frac{1}{4} = P(EFG) \neq P(E)*P(F)*P(G) 
+\end{align*}
+
+Hence, even though the events E, F, G are pairwise independent, they are \impo{not jointly independent}.
+
+
+\paragraph{Example} There are $r$ players, with player $i$ initially having $n_i$ units, $n_i \ge 0, i = 1, \cdots, r$. At each stage, two of the players are chosen to play a game, with the winner of the game receiving $1$ unit from the loser. Any player whose fortune drops to $0$ is eliminated, and this continues until a single player has all $n = \sum^r{i=1} n_i$ units, with that player designed as the victor. Assuming that the results of successive games are independent, and that each game is equally likely to be won by either of its two players, from the probability that player $i$ is the victor.
+
+\paragraph{Solution:} Because this is the same for all players, it follows that each player has the same chance of being the victor. Consequently, each player has probability $\frac{1}{n}$ of being the victor. 
+
+\section{Bayes' Formula}
+\paragraph{Bayes' Formula} Suppose that E has occurred an we are interested in determining which one of the $F_j$ also occurred. We have that
+\begin{align*}
+P(F_j |E) = & \frac{P(EF_j)}{P(E)} & \\
+= &\frac{P(E|F_j) * P(F_j)}{\sum^n_{i=1} P(E|F_j) * P(F_i)}
+\end{align*}
+
+\paragraph{Example} Check Example 1.12-14 in page $11-12$.
+
+\paragraph{Example} You know that a certain letter is equally likely to be in any one of the three different folders. Let $\alpha_i$ be the probability that you will find your letter upon making a quick examination of folder i if the letter is, in fact, in folder $i, i =1, 2, 3.$ (We may have $\alpha_i \le 1$). Suppose you look in folder 1 and don not find the letter. What is the probability that the letter is in folder $1$?
+
+\paragraph{Solution: } Let $F_i, i= 1,2,3$ be the event that the letter is in folder $i$; and let $E$ be the event that a search of folder a does not come up with the letter. We desire $P(F_1|E)$. From Bayes' formula we obtain
+\begin{align*}
+P(F_1|E) = & \frac{P(E|F_1)*P(F_1)}{\sum^3_{i=1} P(E|F_i)*P(F_i)} & \\
+= &\frac{(1-\alpha_1)*1/3}{(1-\alpha_1)*1/3 + 1/3 + 1/3} & \\
+= & \frac{1-\alpha_1}{3- \alpha_1} &
+\end{align*}
+%\begin{figure}[!ht]
+%\centering
+%\subfigure[]{\includegraphics[width= 3 in]{TheoreticalProbability_1000Proxy.PNG}\label{lableA}}
+%\subfigure[]{\includegraphics[width= 3 in]{BestAggressiveness_1000Proxy.pdf} \label{labelB}}
+%\caption{
+%(a)a caption,
+%(b)b caption
+%}
+%\end{figure}
+
+
+%\bibliographystyle{plain}
+%\bibliography{FileNameOfBib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
