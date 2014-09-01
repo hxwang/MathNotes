@@ -1,0 +1,140 @@
+%\documentclass[10pt,conference]{IEEEtran}
+
+\documentclass[10 pt,final]{article}
+
+\usepackage{amssymb} \usepackage{amsmath} \usepackage{amsthm} \usepackage{algorithm} \usepackage{algorithmic} \usepackage{url} \usepackage[margin=1in]{geometry}
+
+\usepackage{subfigure}
+
+\newtheorem{theorem}{Theorem} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{definition}{Definition} \newtheorem{assumption}{Assumption} \newtheorem{example}{Example}
+\newtheorem{observation}[theorem]{Observation}
+%\newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \newtheorem{remark}{Remark} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{fact}{Fact} \newtheorem{invariant}{Invariant}
+
+\usepackage{color}
+\newcounter{todocounter}
+\newcommand{\todo}[1]{\stepcounter{todocounter}\textcolor{red}{to-do\#\arabic{todocounter}: #1}}
+\newcommand{\impo}[1]{{\color{magenta} #1}}
+\newcommand{\question}[1]{{\color{blue} #1}}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{./Figures/}}
+
+\title{Chap 2 Note: Random Variables}
+
+
+\begin{document}
+
+
+
+%\author{Huangxin Wang\thanks{Department of Computer Science, George Mason University. Fairfax, VA 22030. Email: \textsf{hwang14@gmu.edu}}}
+\date{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Random Variables and CDF}
+\paragraph{Example} Suppose that independent trials, each of which results in any of $m$ possible outcomes with respective probabilities $p_1, p_2, \cdots, p_m$, $\sum^m_{i=1} p_i = 1$, are continually performed. Let $X$ denote the number of trials needed until each outcome has occurred at least once.
+
+\paragraph{Explain} Rather than directly considering $P\{X = n\}$ we will first determine $P\{X > n\}$, the probability that at least one of the outcomes has not yet occurred after $n$ trails. Letting $A_i$ denote the event that outcome $i$ has not yet occurred after the first $n$ trails, $i=1,\cdots, m$, then 
+\begin{align*}
+P\{x > n\} = & P(\cup^m_{i=1} A_i) & \\
+= & \sum^m_{i=1} P(A_i) - \sum \sum_{i<j} P(A_i A_j) + \cdots & \\
+& + \sum \sum \sum_{i<j<k} P(A_i A_j A_k) - \cdots + (-1)^{m+1} P(A_1 \cdots A_n) & 
+\end{align*} 
+
+\impo{$P(A_i)$ is the probability that each of the first $n$ trails results in a non-$i$ outcome, and so by independence $P(A_i) = (1-p_i)^n$}
+
+Similarly, $P(A_i A_j)$ is the probability that the first $n$ trails all result in a non-$i$ and non-$j$ outcome, and so
+\begin{align*}
+P(A_i A_j) = (1-p_i - p_j)^n
+\end{align*}
+
+As all of the other probabilities are similar, we see that
+\begin{align*}
+P\{X > n\} = & \sum^m_{i=1} (1-p_i)^n - \sum \sum_{i < j} (1- p_i - p_j)^n & \\
+& + \sum \sum \sum_{i<j<k} (1-p_i-p_j-p_k)^n - \cdots &
+\end{align*}
+
+Since \impo{$P\{X=n\} = P\{X > n-1\} - P\{x>n\}$}, we see, upon using the algebraic identity \impo{$(1-a)^{n-1} - (1-a)^n = a(1-a)^{n-1}$}, that 
+\begin{align*}
+P\{X=n\} = & \sum^m_{i=1} p_i*(1-p_i)^{n-1} - \sum \sum_{i<j}(p_i + p_j)*(1-p_i-p_j) & \\
+& +\sum \sum \sum_{i<j<k} (p_i + p_j + p_k)(1-p_i - p_j -p_k)^{n-1} -\cdots &
+\end{align*}
+
+\paragraph{CDF} The cumulative distribution function(cdf) $F(.)$ of the random variable X is defined for any real number $b$, $-\infty         < b < \infty $, by 
+\begin{align*}
+F(b) = P\{X \leq b\}
+\end{align*}
+
+We have 
+\begin{align*}
+P\{a < X  \leq b\} = F(b) - F(a), \text{for all } a < b \\
+P\{X < b \} = \lim_{h \to 0^+} P\{X \leq b - h\} = \lim_{h \to 0^+} F(b-h)
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discrete Random Variables}
+\subsection{The Bernoulli Random Variable}
+Suppose that a trail, or an experiment, whose outcome can be classified as either a "success" or as a "failure" is performed. If we let $X$ equal $1$ if the outcome is a success and $0$ if it is a failure, then the probability mass function of $X$ is given by
+\begin{align*}
+p(0) & = P\{X = 0\} = 1-p & \\
+p(1) & = P\{X = 1\} = p &
+\end{align*}
+
+where $p, 0 \leq p \leq 1$, is the probability that the trail is a "success".
+
+A random variable X is said to be a \emph{Bernoulli random variable}
+if its probability mass function is given by the above equation for $p \in (0,1)$.
+
+\subsection{The Binomial Random Variable}
+Suppose that $n$ independent trails, each of which results in a "success" with probability $p$ and in a "failure" with probability $1-p$, are to be performed. If \impo{$X$ represents the number of successes that occur in the $n$ trails}, then $X$ is said to be a \impo{\emph{binomial random variable}} with parameters $(n,p)$.
+
+The probability mass function of a binomial random variable having parameters $(n,p)$ is given by
+\begin{align*}
+p(i) = \binom{n}{i} p^i *(1-p)^{n-i}, i=0,1, \cdots, n
+\end{align*}
+where 
+\begin{align*}
+\binom{n}{i} = \frac{n!}{(n-i)!*i!}
+\end{align*}
+
+Note that, by the binomial theorem, the probabilities sum to one, that is,
+\begin{align*}
+\sum^{\infty}_{i=0} p(i) = \sum^n_{i=0} p^i*(1-p)^{n-i} = (1+(1-p))^n = 1
+\end{align*}
+
+
+\subsection{The Geometric Random Variable}
+Suppose that independent trails, each having probability $p$ of being a success, are performed until a success occurs. If we let \impo{$X$ be the number of trails required until the first success}, then $X$ is said to be \impo{\emph{geometric random variable}} with parameter $p$. Its probability mass function is given by
+\begin{align*}
+p(n) = P\{X=n\} = (1-p)^{n-1}*p, n=1,2,\cdots
+\end{align*}
+
+To check that $p(n)$ is a probability mass function, we note that 
+\begin{align*}
+\sum^{\infty}_{n=1} p(n) = \sum^{\infty}_{n=1} (1-p)^{n-1} = 1
+\end{align*}
+
+
+\subsection{The Poisson Random Vairable}
+%\begin{figure}[!ht]
+%\centering
+%\subfigure[]{\includegraphics[width= 3 in]{TheoreticalProbability_1000Proxy.PNG}\label{lableA}}
+%\subfigure[]{\includegraphics[width= 3 in]{BestAggressiveness_1000Proxy.pdf} \label{labelB}}
+%\caption{
+%(a)a caption,
+%(b)b caption
+%}
+%\end{figure}
+
+
+%\bibliographystyle{plain}
+%\bibliography{FileNameOfBib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
