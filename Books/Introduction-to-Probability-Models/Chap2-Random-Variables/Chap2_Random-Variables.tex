@@ -118,20 +118,49 @@ To check that $p(n)$ is a probability mass function, we note that
 \end{align*}
 
 
-\subsection{The Poisson Random Vairable}
-%\begin{figure}[!ht]
-%\centering
-%\subfigure[]{\includegraphics[width= 3 in]{TheoreticalProbability_1000Proxy.PNG}\label{lableA}}
-%\subfigure[]{\includegraphics[width= 3 in]{BestAggressiveness_1000Proxy.pdf} \label{labelB}}
-%\caption{
-%(a)a caption,
-%(b)b caption
-%}
-%\end{figure}
+\subsection{The Poisson Random Variable}
+A random variable $X$, taking on one of the values $0,1,2, \cdots$ is said to be a Poisson random variable with parameter $\lambda$, if for some $\lambda \ge 0$, 
+\begin{align*}
+p(i) = P[X = i] = e^{-\lambda} \frac{\lambda^i}{i!}, i =0,1, \cdots
+\end{align*}
+
+The above equation defines a probability mass function since
+\begin{align*}
+\sum^{\infty}_{i=0} p(i) = e^{-\lambda} \sum^{\infty}_{i=0} \frac{\lambda^i}{i!} = e^{-\lambda}*e^{\lambda} = 1
+\end{align*}
+
+\paragraph{\impo{Approximate a Binomial Random Variable by Poisson}} An important property of the Poisson random variable is that it may e used to approximate a binomial random variable when the binomial parameter \impo{$n$ is large and $p$ is small}. To see this, suppose that $X$ is a binomial random variable with parameters $(n,p)$ and let $\lambda = n*p$. Then
+\begin{align*}
+P{X = i} = & \frac{n!}{(n-i)!*i!} p^i *(1-p)^{n-i} & \\
+= & \frac{n!}{(n-i)!*i!}*(\lambda/n)^i(1-\lambda/n)^{n-i}&\\
+= &\frac{n*(n-1)*\cdots*(n-i+1)}{n^i} *\frac{\lambda^i}{i!}*\frac{(1-\lambda/n)^n}{(1-\lambda/n)^i}
+\end{align*}
+
+For $n$ large and $p$ small, 
+\begin{align*}
+&(1-\lambda/n)^n \approx e^{-\lambda} \\
+&\frac{n*(n-1)*\cdots*(n-i+1)}{n^i} \approx 1 \\
+&(1-\lambda/n)^i \approx 1
+\end{align*}
+
+Hence for $n$ large and $p$ small, we have 
+\begin{align*}
+P\{X=i\} \approx e^{-\lambda}*\frac{\lambda^i}{i!}
+\end{align*}
 
 
-%\bibliographystyle{plain}
-%\bibliography{FileNameOfBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Continuous Random Variables}
+\paragraph{Probability Density Function} $f(x)$ is called the probability density function, which is a derivative of cumulative distribution function(CDF). We have
+\begin{align*}
+& P\{a \leq X \leq b\} = \int_{a}^{b} f(x)dx \\
+& P\{X=a\} = \int_a^a f(x)dx = 0 \\
+& P\{a -\epsilon/2 \leq X \leq a+\epsilon/2\} = \int_{a-\epsilon/2}^{a+\epsilon/2} f(x)dx \approx \epsilon*f(a)
+\end{align*}
+In other words, the probability that \impo{$X$ will be contained in an interval of length $\epsilon$} around the point a is approximately $\epsilon *f(a)$. From this, we see that \impo{ $f(a)$ is a measure of how likely it is that the random variable will be near $a$}.
+
+
+\subsection{The Uniform Random Variable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
