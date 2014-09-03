@@ -197,7 +197,60 @@ f(x) =
 \end{align*}
 
 is said to be an \impo{exponential random variable} with parameter $\lambda$.
+
+\subsection{Gamma Random Variables}
+A continuous random variable whose density is given by
+\begin{align*}
+f(x) = 
+\begin{cases}
+\lambda e^{-\lambda x} (\lambda x)^{\alpha-1} & \mbox{ if } x \ge 0 \\
+0 & \mbox{ if } x<0
+\end{cases}
+\end{align*}
+
+for some $\lambda > 0, \alpha >0$ is said to be a \impo{gamma random variable} with parameter $\alpha, \lambda$. The quantity $\Gamma(\alpha)$ is called the gamma function and is defined by 
+\begin{align*}
+\Gamma(\alpha) = \int_0^{\infty} e^{-x} x^{\alpha-1} dx
+\end{align*}
+
+\question{It is easy to show by induction that for integral $\alpha$, say $\alpha = n$,} 
+\begin{align*}
+\Gamma(n) = (n-1)!
+\end{align*}
+
+\subsection{Normal Random Variables}
+We say that $X$ is a \impo{normal random variable}(or simply that $X$ is \impo{normal distributed}) with parameters $\mu$ and $\sigma^2$ of $X$ is given by
+\begin{align*}
+f(x) = \frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^2/2 \sigma^2}, -\infty < x < \infty
+\end{align*}
+
+The density function is a \impo{bell-shaped} curve that is \impo{symmetric} around $\mu$.
+
+An important fact about normal random variables is that if $X$ is normally distributed with parameter $\mu$ and $\sigma^2$ then $Y = \alpha *X + \beta$ is normally distributed with parameters $\alpha*\mu + \beta$ and \impo{$\alpha^2 \sigma^2$}. 
+
+\begin{proof}
+Suppose first that $\alpha >0$ and note that $F_Y(.)$, the cumulative distribution function of the random variable $Y$, is given by
+\begin{align*}
+F_Y(a) = & P\{ Y \leq a \} & \\
+= & P\{\alpha X + \beta \leq a\} & \\
+= & P\{ X \leq \frac{a - \beta}{\alpha}\} & \\
+= & F_X(\frac{a-\beta}{\alpha}) & \\
+= & \int_{-\infty}^{(a-\beta)/\alpha} \frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^2/2 \sigma^2} dx &\\
+= &\int_{-\infty}^a \frac{1}{\sqrt{2 \pi} \alpha \sigma} exp\{ \frac{-(v-(\alpha \mu + \beta))^2}{2\alpha^2 \sigma^2}\} dv &\\
+\end{align*}
+where the last equality is obtained by the change in variables $v = \alpha x + \beta$. However, since $F_Y(a) = \int_{-\infty}^a f_Y(v) dv $, it follows from the Equation that the profit density function $f_Y(.)$ is given by 
+\begin{align*}
+f_Y(v) = \frac{1}{\sqrt{2 \pi} \alpha \sigma} exp\{ \frac{-(v-(\alpha \mu + \beta))^2}{2(\alpha \sigma)^2}\}, -\infty < v < \infty
+\end{align*}
+
+Hence, $Y$ is normally distributed with parameters $\alpha \mu + \beta$ and $(\alpha \mu)^2$. A similar result is also true when $\alpha < 0$.
+\end{proof}
+
+\paragraph{Implementation} One implementation of the preceding result is that if $X$ is normally distributed with parameters $\mu$ and $\sigma^2$ then $Y=\frac{X - \mu}{\sigma}$ is normally distributed with parameters $0$ and $1$. Such a random variable $Y$ is said to have the \impo{standard} or \impo{unit normal distribution}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Expectation of a Random Variable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
 
