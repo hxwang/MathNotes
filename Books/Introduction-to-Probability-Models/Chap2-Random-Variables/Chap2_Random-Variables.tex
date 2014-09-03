@@ -161,7 +161,42 @@ In other words, the probability that \impo{$X$ will be contained in an interval 
 
 
 \subsection{The Uniform Random Variable}
+A random variable is said to be \impo{uniformly distributed} over the interval $(0,1)$ if its probability density is given by
 
+\begin{align*}
+f(x) =
+\begin{cases}
+1 &0 < x < 1\\ 
+0 &otherwise.
+\end{cases}
+\end{align*}
+
+Note that the preceding is a density function since $f(x) \geq 0$ and
+\begin{align*}
+\int_{-\infty}^{\infty} f(x)dx = \int_0^1 = 1
+\end{align*}
+
+In general, we say that $X$ is a uniform random variable on the interval $(\alpha, \beta)$ if its probability density function is given by
+\begin{align*}
+f(x) =
+\begin{cases}
+\frac{1}{\beta - \alpha} & \mbox{if } \alpha < x < \beta \\
+0 & otherwise
+\end{cases}
+\end{align*}
+
+
+\subsection{Exponential Random Variable}
+A continuous random variable whose probability density function is given, for some $\lambda > 0$, by
+\begin{align*}
+f(x) =
+\begin{cases}
+\lambda * e^{-\lambda*x} & \mbox{if } x \ge 0 \\
+0 & \mbox{if } x <0
+\end{cases}
+\end{align*}
+
+is said to be an \impo{exponential random variable} with parameter $\lambda$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
