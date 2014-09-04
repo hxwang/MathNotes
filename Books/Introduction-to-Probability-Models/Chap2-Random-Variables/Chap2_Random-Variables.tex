@@ -249,9 +249,114 @@ Hence, $Y$ is normally distributed with parameters $\alpha \mu + \beta$ and $(\a
 \paragraph{Implementation} One implementation of the preceding result is that if $X$ is normally distributed with parameters $\mu$ and $\sigma^2$ then $Y=\frac{X - \mu}{\sigma}$ is normally distributed with parameters $0$ and $1$. Such a random variable $Y$ is said to have the \impo{standard} or \impo{unit normal distribution}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Expectation of a Random Variable}
+\paragraph{Expected Value} a weighted average of the possible value that $X$ can take on, each value being weighted by the probability that $X$ could be.
+
+\subsection{The Discrete Case}
+\begin{itemize}
+\item \textbf{Bernoulli Random Variable} p
+\item \textbf{Binomial Random Variable} np
+\item \textbf{Geometric Random Variable} $\frac{1}{p}$
+\item \textbf{Poisson Random Variable} $\lambda$
+\end{itemize}
+
+\subsection{The Continuous Case}
+\paragraph{Example(Expectation of an Exponential Random Variable)} Let $X$ be exponentially distributed with parameter $\lambda$, calculated $E[X]$. 
+\paragraph{Solution:} 
+\begin{align*}
+E[X] & = \int_0^{\infty} x \lambda e^{\lambda X} dx 
+\end{align*}
+
+Integrating by parts ($dv = \lambda e^{\lambda x}$, $u=x$) yields, 
+\begin{align*}
+E[X] & = -x e^{-\lambda x}|^{\infty}_{0} + \int_0^{\infty} e^{-\lambda x} dx \\
+& = 0 - \frac{e^{-\lambda x}}{\lambda}|^\infty_{0}\\
+& = \frac{1}{\lambda} \\
+\end{align*}
+
+\subsection{Expectation of a Function of a Random Variable}
+\paragraph{Example} Let $X$ be uniformly distributed over $(0,1)$. Calculate $E[X^3]$.
+
+\textbf{Solution:}
+\begin{align*}
+E[X^3] = \int_0^{1} x^3 dx = \frac{1}{4}
+\end{align*}
+
+
+\paragraph{\impo{Moment}} The expected value of a random variable $X$, $E[X]$, is also referred to as the mean or the first moment of $X$. The quantity $E[X^n], n \geq 1$, is called the \impo{$n$-th moment} of $X$. We have
+\begin{align*}
+E[X^n] = 
+\begin{cases}
+\sum_{x:p(x) > 0} x^n p(x) & \mbox{ if $X$ is discrete} \\
+\int_{-\infty}^{\infty} x^n f(x) dx & \mbox{ if $X$ is continuous}
+\end{cases}
+\end{align*}
+
+\paragraph{Variance} 
+\begin{align*}
+Var(X) = E[X^2] - (E[x])^2
+\end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Jointly Discrete Random Variables}
+\subsection{Joint Distribution Functions}
+\paragraph{Example} Calculate the expected sum obtained when three fair dice are rolled.
+
+\textbf{Solution:} Let $X$ denote the sum obtained. Then $X = X_1 + X_2 + X_3$ where $X_i$ represents the value of the $i$-th die. Thus,
+\begin{align*}
+E[X] = E[X_1] + E[X_2] + E[X_3] = 3*(7/2) = 21/2
+\end{align*}
+
+\paragraph{Example} At a party $n$ men throw their hats into the center of a room. The hats are mixed up and each man randomly selects one. Find the expected number of men who select their own hats. 
+
+\textbf{Solution:} Letting $X$ denote the number of men that selects their own hats, we can best compute $E[X]$ by noting that 
+\begin{align*}
+X = X_1 + X_2 + \cdots + X_N
+\end{align*}
+where
+\begin{align*}
+X_i =
+\begin{cases}
+1 & \mbox{ if the ith man selects his own hat} \\
+0 & \mbox{ otherwise}
+\end{cases}
+\end{align*}
+
+Now, because the $i$-th man is equally likely to select any of the $N$ hats, it follows that 
+\begin{align*}
+P\{X_i=1\} = P\{\mbox{the ith man selects his own hat}\} = \frac{1}{N}
+\end{align*}
+
+and so 
+\begin{align*}
+E[X_i] = 1*Pr\{X_i = 1\} + 0 * Pr\{X_i = 0\}
+\end{align*}
+
+Hence, we have $E[X] = 1$. Hence now matter how many people are at the party, on the average exactly one of the men will select his own hat.
+
+
+
+\paragraph{Example} Suppose that there are $25$ different types of coupons and suppose that each time one obtains a coupon, it is equally likely to be any one of the $25$ types. Compare the expected number of different types that are contained in a set of $10$ coupons. 
+
+\textbf{Solution:} Let $X$ denote the number of different types in the set of $10$ coupons. We compare $E[X]$ by using the representation $E[X] = E[X_1] + \cdots + E[X_{25}]$.
+
+where 
+\begin{align*}
+X_i =
+\begin{cases}
+1 & \mbox{if at least one type $i$ coupon is in the set of 10} \\
+0 & \mbox{otherwise} 
+\end{cases}
+\end{align*}
+Now,
+
+\begin{align*}
+E[X_i] & = P\{X_i = \} \\
+& = P\{\mbox{At least one type $i$ coupon is in the set of $10$}\} \\
+& = 1 - P\{\mbox{no type $i$ coupons are in the set of $10$}\} \\
+& = 1 - (\frac{24}{25})^2
+\end{align*}
+
+Therefore, $E[X] = 25*(1-(\frac{24}{25})^25)$.
 
 \end{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
