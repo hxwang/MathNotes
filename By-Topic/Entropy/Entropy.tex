@@ -21,7 +21,7 @@
 \usepackage{graphicx}
 \graphicspath{{./Figures/}}
 
-\title{Note of: An Introduction to Information theory and entropy}
+\title{Note of: An Introduction to Information Theory and Entropy}
 
 
 \begin{document}
@@ -34,8 +34,51 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{Information Theory} Measures related to how surprising or unexpected an observation or event is. This approach has been described as \emph{information theory}.hd
 
+
+\section{Entropy}
+\paragraph{Information Theory} Measures related to how surprising or unexpected an observation or event is. This approach has been described as \emph{information theory}.
+
+\paragraph{Definition} We have defined \emph{information} strictly in terms of the probabilities of events. Therefore, let us suppose we have a set of probabilities(a probability distribution) $P=\{p1_,p_2, \cdots, p_n\}$. We define the entropy of the distribution $P$ by
+\begin{align*}
+H(P) = \sum^n_{i=1} p_i*\log{(1/p_i)}
+\end{align*}
+
+We can think about this as the expected value. In other words, the entropy of a probability distribution is just the expected value of the information of the distribution. 
+
+\paragraph{\impo{The Gibbs Inequality}}
+First, note that the function $\ln(x)$ has derivative $1/x$. From this, we find that the tangent to $\ln(x)$ at $x=1$ is the line $y=x-1$. Further, since $\ln(x)$ is concave down, we have, for $x >0$, that 
+\begin{align*}
+ln(x) \leq x -1
+\end{align*}
+with equality only when $x=1$. Now given two probability distributions,\\
+$P=\{p_1, p_2, \cdots, p_n\} and $ \\
+$Q=\{q_1, q-2, \cdots, q_n\},$ where $p_i, q_i \geq 0$, \\
+and $\sum_i p_i = \sum_i q_i =1$, we have
+
+\impo{
+\begin{align*}
+\sum^n_{i=1} p_i \ln(q_i/p_i) \leq \sum^n_{i=1} p_i*(q_i/p_i -1) = \sum^n_{i=1} (q_i-p_i) = \sum^n_{i=1} q_i - \sum^n_{i=}p_i = 1 - 1 =0
+\end{align*}
+with equality only when $p_i = q_i$ for all $i$. }
+
+\paragraph{Application of Gibbs Inequality} We can use the Gibbs inequality to find the probability distribution which maximize the entropy function. Suppose $P=\{p_1, p_2, \cdots, p_n\}$ is a probability distribution. We have
+\begin{align*}
+H(P) - log(n) & = \sum^n_{i=1} p_i *\log{1/p_i} - log(n) \\
+& = \sum^n_{i=1} p_i \log(1/p_i) - log(n) \sum^n_{i=1} p_i \\
+& = \sum^n_{i=1} p_i \log(1/p_i) - \sum^n_{i=1} p_i \log{n} \\
+& = \sum^n_{i=1} p_i \log{\frac{1/n}{p_i}} \\
+& \leq 0
+\end{align*}
+with equality only when $p_i = 1/n$ for all $i$. The last step is the application of Gibbs inequality.
+
+That this means is that 
+\impo{
+\begin{align*}
+0 \leq H(n) \leq \log(n)
+\end{align*}
+}
+That is, the maximum entropy is achieved when all the events are equally likely.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
