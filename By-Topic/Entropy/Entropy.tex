@@ -135,10 +135,52 @@ and thus, \impo{we can maximize channel use by maximizing the use for each symbo
 \paragraph{Shannon Main Theorem} For any channel, there exist ways of \impo{encoding input symbols} such that we can simultaneously utilize the channel as closely as we wish to the capacity, and at the same time have an error rate as close to zero as we wish.
 
 This is actually quite a remarkable theorem. We might naively guess that in order to minimize the error rate, we would have to use more o the channel capacity for error detection/correction, and less for actual transmission of information. \impo{Shannon showed that it is possible to keep error rates low and still use the channel for information transmission at(or near) its capacity}.
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Some other measurements}
+\paragraph{Moment}
+There have been various approaches to expanding on the idea of entropy as a measure of complexity. One useful generalization of entropy was developed by the Hungarian methematician A. Renyi. His method involves looking at \question{the moments} of order $q$ of a probability distribution $\{p_i\}$
+\begin{align*}
+S_q = \frac{1}{q-1}log \sum_i (p_i)^q
+\end{align*}
 
+
+\question{how?}
+
+If we take the limit as $q \to 1$, we get:
+\begin{align*}
+S_1 = \sum_i p_i log(1/p_i)
+\end{align*}
+the entropy we have previously defined. We can then think of \impo{$S_q$ as a generalized entropy for any real number $q$.}
+
+\paragraph{Dimension} Expanding on these generalized entropies, we can then define a generalized dimension associated with a data set. If we imaging the data set to be distributed among bins of diameter $r$, we can let $p_i$ be the probability that a data item falls in the $i$-th bin(estimated by counting the data elements in the bin, and dividing by the total number of items). We can then, for each $q$, define a dimension
+
+\question{why make such definition?}
+\begin{align*}
+D_q = \lim_{r \to 0} \frac{1}{q-1} \frac{log \sum_i (p_i)^q}{log(r)}
+\end{align*}
+
+\impo{why do we call this a generalized dimension?} Consider $D_0$. First, we sill adopt the convention that $(p_i)^0$ when $p_i = 0$. Also, let $N_r$ be the number of non-empty bins(i.e., the number of bins of diameter $r$ it takes to cover the data set).
+
+Then we have:
+\begin{align*}
+D_0 = \lim_{r \to 0} \frac{log \sum_i (p_i)^0}{log(1/r)} = \lim_{r \to 0} \frac{log(N_r)}{log(1/r)}
+\end{align*}
+
+Thus, $D_0$ is the hausdorff dimension $D$, which is frequently in the literature called the \impo{fractal dimension} of the set.
+
+\question{Need Explain}
+
+\paragraph{Example 1} Consider the unit interval $[0,1]$. Let $r_k = 1/(2)^k$. Then $N_{rk} = 2^{2k}$, and
+\begin{align*}
+D_0 = \lim{k \to \infty} \frac{log(2^{k})}{log(2^k)} = 1
+\end{align*}
+
+\paragraph{Example 2} Consider the unit square $[0,1]*[0,1]$. Again, let $r_k = 1/2^k$. Then $N_{rk} = 2^{2k}$, and
+\begin{align*}
+D_0 = \lim_{k \to \infty} \frac{log(2^{2k})}{log(2^k)} = 2
+\end{align*}
+
+\paragraph{Example 3} Consider the \impo{Cantor Set} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Examples using Bayes' Theorem}
 \end{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
