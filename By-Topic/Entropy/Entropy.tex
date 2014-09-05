@@ -79,6 +79,64 @@ That this means is that
 \end{align*}
 }
 That is, the maximum entropy is achieved when all the events are equally likely.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Shannon's Communication Theory}
+\subsection{Introduction}
+In his classic 1948 papers, Claude Shannon laid the foundations for contemporary information, coding , and communication theory. He developed a general model for communication systems, and a set of theoretical tools for analyzing such systems. 
+
+His \impo{basic model} consists of three parts: a sender(or source), a channel, and a receiver(or sink). His general model also includes encoding and decoding elements, and noise within the channel.
+
+\paragraph{Model} In Shannon's discrete model, it is assumed that the source provides a stream of symbols selected from a finite alphabet $A=\{a_1, a_2, \cdots, a_n\}$, which are then encoded. The code is sent through the channel(and possibly disturbed by noise). At the other end of the channel, the receiver will decode, and derive information from the sequence of symbols. 
+
+Given a source of symbols, and a channel with noise(in particular, a probability model for these elements), we can talk about the capacity of the channel. The general model Shannon worked with involved two sets of symbols, the input symbols and the output symbols. Let us say the two sets of symbols are
+\begin{align*}
+A = \{a_1, s_2, \cdots, a_n\} and  \\
+B = \{b-1, b_2, \cdots, b_m\}.
+\end{align*}
+
+Note that we do not necessarily assume the same number of symbols in the two sets. Given the noise in the channel, when symbol $b_j$ comes out of the channel, we can not be sure which $a_i$ was put in. The channel is characterized by the set of probabilities $\{P(a_i|b_j)\}$.
+
+\paragraph{Mutual Information} We consider information we get from observing a symbol $b_j$. Given a probability model of the source, we have an priori estimate $P(a_i)$ that symbol $a_i$ will be sent next. Upon observing $b_j$, we can revise our estimate to $P(a_i|b_j)$. The change in our information(\impo{the mutual information}) will be given by:
+\begin{align*}
+I(a_i;b_j) & = log(\frac{1}{P(a_i)} - log(\frac{1}{P(a_i|b_j)}) \\
+& = log(\frac{P(a_i|b_j)}{P(a_i)}
+\end{align*} 
+
+We have the properties:
+\begin{align*}
+I(a_i; b_j) = I(b_j; a_i) \\
+I(a_i; b_j) = log(P(a_i|b_j)) + I(a_i) \\
+I(a_i, b_j) \leq I(a_i)
+\end{align*}
+
+If $a_i$ and $b_j$ are independent (i.e., if $P(a_i,b_j) = P(a_i) * P(b_j)$), then 
+\begin{align*}
+I(a_i, b_j) = 0
+\end{align*}
+
+\paragraph{Average the mutual information over all the symbols}
+\begin{align*}
+I(A; b_j) & = \sum_i P(a_i|b_j)*I(a_i;b_j) \\
+& =\sum_i P(a_i |b_j) * log(\frac{P(a_i|b_j)}{P(a_i)})
+\end{align*}
+
+\paragraph{Channel Capacity C} We define the Channel Capacity to be 
+\begin{align*}
+C = \max_{P(a)} I(A;B)
+\end{align*}
+
+\question{Property} We have the nice property that if we are using the channel at its capacity, then for each of the $a_i$
+\begin{align*}
+I(a_i;B) = C
+\end{align*}
+and thus, \impo{we can maximize channel use by maximizing the use for each symbol independently}.
+
+\paragraph{Shannon Main Theorem} For any channel, there exist ways of \impo{encoding input symbols} such that we can simultaneously utilize the channel as closely as we wish to the capacity, and at the same time have an error rate as close to zero as we wish.
+
+This is actually quite a remarkable theorem. We might naively guess that in order to minimize the error rate, we would have to use more o the channel capacity for error detection/correction, and less for actual transmission of information. \impo{Shannon showed that it is possible to keep error rates low and still use the channel for information transmission at(or near) its capacity}.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
