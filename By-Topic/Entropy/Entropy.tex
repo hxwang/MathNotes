@@ -35,6 +35,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Notes for Materials "An introduction to information theory and entropy", by Tom Carter.
 
 \section{Entropy}
 \paragraph{Information Theory} Measures related to how surprising or unexpected an observation or event is. This approach has been described as \emph{information theory}.
@@ -182,5 +183,280 @@ D_0 = \lim_{k \to \infty} \frac{log(2^{2k})}{log(2^k)} = 2
 
 \paragraph{Example 3} Consider the \impo{Cantor Set} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Examples using Bayes' Theorem}
+\section{Analog Channels}
+\paragraph{Problem Model} Suppose we have a signalling system using \impo{band-limited} signals(i.e., the frequencies of the transmissions are restricted to lie within some specified range). Let us call the bandwidth $W$. Let us further assume we are transmitting signals of duration $T$. In order to reconstruct a given signal, we will need $2WT$\question{why??} samples of the signal. Thus, if we are sending continuous signals, each signal can be represented by $2WT$ numbers $x_i$, taken at equal intervals.
+
+\question{why define energy in such form??}
+We are associated each signal an energy, given by
+\begin{align*}
+E = \frac{1}{2W} \sum^{2WT}_{i=1} (x_i)^2
+\end{align*}
+
+The \impo{distance} of the signal(from the original) will be
+\begin{align*}
+r = (\sum (x_i)^2)^{1/2} = (2WE)^{1/2}
+\end{align*}
+
+We can define the \impo{signal power} to be the average energy
+\begin{align*}
+S = \frac{E}{T}
+\end{align*}
+
+Then the \impo{radius} of the sphere of transmitted signals will be
+\begin{align*}
+r = (2WST)^{1/2}
+\end{align*}
+
+Each signal will be disturbed by the noise in the channel. If we measure the power of the noise $N$ added by the channel, the disturbed signal will lie in a sphere around the original signal of radius $(2WNT)^{1/2}$.
+
+Thus the original sphere must be \impo{enlarged} to a larger radius to enclose the disturbed signals. The new radius will be
+\begin{align*}
+r = (2WT(S+N))^{1/2}
+\end{align*}
+
+In order to use the channel effectively and minimize error(misreading of signals.), we will want to put the signals in the sphere, \impo{and separate them as much as possible}(and have the distance between the signals \impo{at least twice} what the noise contributes...). We thus want to divide the sphere up into sub-spheres of radius = $(2WNT)^{1/2}$. From this, we can get an upper bound on the number $M$ of possible messages that we can reliably distinguish. We can use the formula for \impo{the volume of an $n$-dimensional sphere}
+\begin{align*}
+V(r,n) = \frac{\pi^{n/2} r^n}{\Gamma(n/2+1)}
+\end{align*}
+
+We have the bound
+\begin{align*}
+M \leq \frac{\pi^{WT} (2WT(S+N))^{WT}}{\Gamma(WT+1)} \frac{\Gamma(WT+1)}{\pi^{TW}(2WTN)^{WT}}
+\end{align*}
+
+The information sent is \impo{the log of the number of messages sent}(assuming they are equally likely), and hence
+\begin{align*}
+I = log(M) = WT*log(1+S/N)
+\end{align*}
+We thus have the usual signal/noise formula for channel capacity.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A Maximum Entropy Principle}
+\paragraph{Model} Suppose we have a system for which we can measure certain macroscopic characteristics. Suppose further that the system is made up of many microscopic elements, and the system is free to vary among various states. 
+\paragraph{Conclusion} With probability essentially equal to $1$, the system will be observed in states with maximum entropy.
+
+We will then sometimes be able to gain understanding of the system by applying a \impo{maximum information entropy principle(MEP)}, and using Lagrange multipliers, derive formulae for aspects of the system.
+
+Suppose we have a set of macroscopic measurable characteristics $f_k, k=1,2, \cdots, M$(which we can think of as constraints on the system), which we assume are related to microscopic characteristics via
+\begin{align*}
+\sum_i p_i *(f_i)^{(k)} = f_k
+\end{align*}
+
+Of course, we also have the constraints
+\begin{align*}
+p_i \geq 0 \\
+\sum_i p_i = 1
+\end{align*}
+
+\question{(how to use Lagrange multipliers??}
+We want to maximize the entropy $\sum_i p_ilog(1/p_i)$, subject to these constraints. Using \impo{Lagrange multipliers} $\lambda_k$(one for each constraint), we have he general solution:
+\begin{align*}
+p_i = exp(-\lambda - \sum_k \lambda_k (f_i)^{(k)}
+\end{align*}
+
+If we define $Z$, called the partition function, by
+\begin{align*}
+Z(\lambda_1, \cdots, \lambda_M) = \sum_i exp(-\sum_k \lambda_k (f_i)^{(k)})
+\end{align*}
+
+then we have $e^\lambda = Z$, or $\lambda = ln(z)$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Application: A Boltzmann Economy}
+\paragraph{Model} Suppose there is a fixed amount of money($M$ dollars), and a fixed number of agents($N$) in the economy. Suppose that during each time step, each agent randomly selects another agent and transfers one dollar to the selected agent. An agent having no money doesn't go in debt. What will the long term(stable) distribution of money be? We can image that every agent starts with approximately the same amount of money, although in the long run, the starting distribution shouldn't matter.
+
+\paragraph{Analysis} For this model, we are interested in looking at the distribution of money in the economy, so we are looking at the probabilities $\{p_i\}$ that an agent has the amount of money $i$. We are hoping to develop a model for the collection $\{p_i\}$.
+
+If we let $n_i$ be the number of agents who have $i$ dollars, we have two constraints
+\begin{align*}
+\sum_i n_i * i = M \\
+\sum_i n_i = N
+\end{align*}
+
+Phrased differently(using $p_i = n_i/N$), this says 
+\begin{align*}
+\sum_i p_i*i = \frac{M}{N} \\
+\sum_i p_i = 1
+\end{align*}
+
+We now apply \impo{Lagrange multipliers} \question{how??}:
+\begin{align*}
+L = \sum_i p_i * ln(1/p_i) - \lambda[\sum_i p_i*i - M/N] - \mu [\sum_i p_i -1]
+\end{align*}
+
+from which we get
+\begin{align*}
+\frac{\partial_L}{\partial_{p_i}} = -[1+\ln(p_i)] - \lambda i - \mu = 0
+\end{align*}
+
+We can solve this for $p_i$:
+\begin{align*}
+ln(p_i) = -\lambda *i + (1+\mu) \\
+p_i = e^{-\lambda_0} e^{-\lambda i}
+\end{align*}
+
+where we set $1+\mu \equiv \lambda_0$.
+
+\impo{Putting in constraints}, we have
+\begin{align*}
+1 & = \sum_i p_i \\
+& = \sum_i e^{-\lambda_0} e^{-\lambda i} \\
+& = e^{-\lambda_0} \sum^M_{i=0} e^{-\lambda i}
+\end{align*}
+
+and 
+\begin{align*}
+\frac{M}{N} & = \sum_i p_i \\
+& = \sum_i e^{-\lambda_0}e^{-\lambda i} * i \\
+& = e^{-\lambda_0} \sum^M_{i=0}e^{\lambda i} *i
+\end{align*}
+
+We can approximate(for large $M$)
+\begin{align*}
+\sum^M_{i=0} e^{\lambda i} \approx \int_0^M e^{\lambda x} dx \approx \frac{1}{\lambda} \\
+\sum^M_{i=1} e^{\lambda i} *i \approx \int_0^M x e^{\lambda x} dx = \frac{1}{\lambda^2}
+\end{align*}
+
+From these, we have(approximately)
+\begin{align*}
+e^{\lambda_0} = \frac{1}{\lambda} \\
+e^{\lambda_0} \frac{M}{N} = \frac{1}{\lambda^2}
+\end{align*}
+
+From this, we get
+\begin{align*}
+\lambda = \frac{N}{M} = e^{\lambda_0}
+\end{align*}
+
+and thus(letting $T=\frac{M}{N}$) we have:
+\begin{align*}
+p_i = e^{-\lambda_0}e^{-\lambda i} = \frac{1}{T} e^{-\frac{i}{T}}
+\end{align*}
+
+This is a \impo{Boltzmann-Gibbs} distribution, where we can think of $T$(the average amount of money per agent) as the "temperature", and thus we have a "Boltzmann economy"...
+
+Note: this distribution also solves the functional equation \question{why???}
+\begin{align*}
+p(m_1) p(m_2) = p(m_1 + m_2)
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Application: A Power Law}
+\paragraph{Model} Suppose that a (simple) economy is made up of many agents $a$, each with wealth at time $t$ in the amount of $w(a,t)$. We are interested in looking at the distribution of wealth in the economy, so we will assume there is some collection $\{w_i\}$ of possible values for the wealth an agent can have, and associated probabilities $\{p_i\}$ that an agent has wealth $\{w_i\}$. We are hoping to develop a model of the collection $\{w_i\}$.
+
+\paragraph{Analysis} In order to apply the \impo{maximum entropy principle}, we want to look at global(aggregate/macro) observables of the system that reflect(or are made up of) characteristics of(micro) elements of the system. 
+
+For example, we can look at the growth rate of the economy. A reasonable way to think about this is to let $R_i = w_i(t_1)/w_i(t_0)$ and $R=W(t_1)/W(t_0)$(where $t_0$ and $t_1$ represent time steps of the economy). The growth rate will then be $\ln(R)$. We then have the \impo{two constraints} on the $p_i$ \question{how the first constraint???}
+\begin{align*}
+\sum_i p_i *ln(R_i) = ln(R) \\
+\sum_i p_i =1
+\end{align*}
+
+We now apply \impo{Lagrange multipliers}
+\begin{align*}
+L = \sum_i p_i \ln(1/p_i) - \lambda[\sum_i p_iln(R_i) - ln(R)] - \mu[\sum_i p_i -1]
+\end{align*}
+
+from which we get
+\begin{align*}
+\frac{\partial L}{\partial p_i} = -[1+\ln(p_i)] - \lambda ln(R_i) - \mu = 0
+\end{align*}
+
+We cab solve this for $p_i$
+\begin{align*}
+p_i = e^{-\lambda_0} e^{-\lambda ln(R_i)} = e^{-\lambda_0} (R_i)^{-\lambda}
+\end{align*}
+(where we have set $1+\mu \equiv \lambda_0$.)
+
+Solving, we get $\lambda_0 = ln(Z(\lambda))$ (\impo{by using $\sum_i p_i =1$}), where $Z(\lambda) \equiv \sum_i (R_i)^{-\lambda}$(the partition function) normalizes the probability distribution to sum to 1. from this we see the power law(for $\lambda >1$):
+\begin{align*}
+p_i = \frac{(R_i)^{-\lambda}}{Z(\lambda)}
+\end{align*}
+
+\paragraph{Continuous Version} We let $R= w(T)/w(0)$ be the relative wealth at time $T$. We ant to find the probability density function $f(R)$, that is \impo{i.e., find f(R) that maximize the entropy}
+\begin{align*}
+max_{\{f\}} H(f) = - \int_1^\infty f(R) ln(f(R)) dR
+\end{align*}
+
+subject to
+\begin{align*}
+\int_1^\infty f(R)dR = 1 \\
+\int_1^\infty f(R) ln(R) dR = Cln(R)
+\end{align*}
+
+where $C$ is the average number of transactions per time step. (\question{why????})
+
+We need to apply the calculus of variations to maximize over a class of functions.
+
+When we are solving an extremal problem of the form
+\begin{align*}
+F[x,f(x), f'(x)] dx
+\end{align*}
+
+we work to solve
+\begin{align*}
+\frac{\partial F}{\partial f(x)} - \frac{d}{dx}(\frac{\partial F}{\partial f'(x)}) = 0
+\end{align*}
+
+Our Lagrangian is of the form
+\begin{align*}
+L \equiv -\int_1^\infty f(R) ln(f(R)) dr - \mu(\int_1^\infty f(R)dR -1) - \lambda(\int_1^\infty f(R)ln(R)dR - C*ln(R))
+\end{align*}
+
+\impo{neglect following analysis...}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Application to Physics(laser)}
+
+\paragraph{Model} For a laser, we will be interested in the intensity of the light emitted, and the coherence property of the light will be observed in the \impo{second moment} of the intensity. The electric field \impo{strength} of such a laser will have the form
+\begin{align*}
+E(x,t) = E(t)sin(kx)
+\end{align*}
+
+and $E(t)$ can be decomposed in the form 
+\begin{align*}
+E(t) = B*e^{-iwt} + B*e^{iwt}
+\end{align*}
+
+If we measure the intensity of the light over time intervals long compared to the frequency, but small compared to fluctuations of $B(t)$, the output will be proportional to $BB*$ and to the \impo{loss rate} $sk$, of the laser:
+\begin{align*}
+I = 2kBB*
+\end{align*}
+The \impo{intensity} squared will be
+\begin{align*}
+I^2 = 4k^2B^2B*^2
+\end{align*}
+
+\paragraph{Analysis}
+If we assume that $B$ and $B^*$ are continuous random variables associated with a stationary process, then the \impo{information entropy} of the system will be
+\begin{align*}
+H = \int p(B,B*) log(\frac{1}{p(B,B*)}) d^2B
+\end{align*}
+
+The \impo{two constraints} \question{why???} on the system will be the averages of the intensity and the square of the intensity:
+\begin{align*}
+f_1 = <2kBB*>,\\
+f_2 = <4k^2B^2B*^2>
+\end{align*}
+
+Then, of course, we will let
+\begin{align*}
+f^{(1)}_{B,B*} = 2kBB* \\
+f^{(2)}_{B,B*} = 4k^2B^2B*^2
+\end{align*}
+
+
+We can now use the method outlined above, finding the maximum entropy general solution derived via Lagrange multipliers for this system.
+
+Applying the general solution, we get 
+\begin{align*}
+P(B,B^*) = exp[-\lambda - \lambda_1 2kBB* - \lambda_2 4k^2 B^2 b*^2]
+\end{align*}
+or in other notation:
+\begin{align*}
+p(B,B^*) = N*exp(-\alpha |B|^2 - \beta |B|^4)
+\end{align*}
+
+This function in laser physics is typically derived by solving the \impo{Fokker-Planck} equation belonging to the \impo{Langevin equation} for the system. 
+
+
+
 \end{document}
