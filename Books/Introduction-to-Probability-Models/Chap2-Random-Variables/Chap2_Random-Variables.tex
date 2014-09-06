@@ -428,12 +428,118 @@ since $Var(X_i) = E[(X_i)^2] - (E[X_i])^2 = p - p^2$ since $(X_i)^2 = X_i$.
 
 And thus $Var(X) = np(1-p)$.
 
+
+
 \paragraph{\impo{Hypergeometric}} The random variable $\sum^n_{i=1} X_i$ can be thought of representing the number of white balls obtained when $n$ balls are randomly selected from a population consisting of $Np$ white and $N-Np$ black balls. Such a random variable is called \impo{hypergeometric} and has a probability mass function given by 
 \begin{align*}
 P\{\sum^n_{i=1} X_i = k\} = \frac{\binom{Np}{k} \binom{N-Np}{n-k}}{\binom{N}{n}}
 \end{align*}
 
+\subsection{\impo{Distribution of X+Y}}
+We consider the distribution of $X+Y$ from the distributions of $X$ and $Y$ when $X$ and $Y$ are independent. Suppose first that $X$ and $Y$ are continuous, $X$ having probability density $f$ and $Y$ having probability density $g$. Then letting $F_{X+Y}(a)$ be the cumulative distribution function of $X+Y$, we have
+\begin{align*}
+F_{X+Y}(a) & = P{X+Y \leq a} \\
+& = \int \int+{X+ Y \leq a} f(x)g(y) dx dy \\
+& = \int_{\infty}^\infty \int_\infty^{a-y} f(x) g(y) dxdy \\
+& = \int_{-\infty}^\infty (\int_{-\infty}^{a-y}dx) g(y)dy \\
+& = \int_{-\infty}^\infty F_X(a-y) g(y)dy
+\end{align*}
 
+The cumulative distribution function $F+{X+Y}$ is called the \impo{convolution} of the distributions $F_X$ and $F_T$(the cumulative distributions functions of $X$ and $Y$ respectively).
+
+By differentiating the equation, we obtain the probability density function $f_{X+Y} (a)$ of $X+Y$ given by
+\begin{align*}
+f+{X+Y})(a) & = \frac{d}{da} \int_{-\infty}^\infty F_X(a-y) g(y) dy \\
+& = \int_{-\infty}^\infty \frac{d}{da} (F_X(a-y))g(y)dy \\
+& = \impo{ \int_{-\infty}^\infty f(a-y) g(y) dy}
+\end{align*}
+
+
+\paragraph{Example} If $X$ and $Y$ are independent random variables both uniformly distributed on $(0,1)$, then calculate the probability of $X+Y$.
+
+\textbf{Solution:} since 
+\begin{align*}
+f(a) = g(a) =
+\begin{cases}
+1 & \mbox{0 < a < 1} \\
+0 & otherwise
+\end{cases}
+\end{align*}
+
+We obtain
+\impo{
+\begin{align*}
+f_{X+Y}(a) =\int_0^1 f(a-y)g(y)dy =  \int_0^a f(a-y)dy 
+\end{align*}
+}
+
+For $0\leq a \leq 1$, this yields
+
+\begin{align*}
+f_{X+Y}(a) = \int_0^a dy = a
+\end{align*}
+
+For $1<a<2$, we get
+\begin{align*}
+f_{X+Y}(a) = \int_{(a-1)}^1 dy = 2-a
+\end{align*}
+
+Hence, we have
+\begin{align*}
+f_{X+Y}(a) = 
+\begin{cases}
+a & \mbox{$0 \leq a \leq 1$} \\
+2-a & \mbox{1 <a <2} \\
+0 & \mbox{otherwise}
+\end{cases}
+\end{align*}
+
+\paragraph{Sum of Independent Poisson Random Variables} Let $X$ and $Y$ be independent Poisson random variables with respective means $\lambda_1$ and $\lambda_2$. Then $X_1+X_2$ has a Poisson distribution with mean $\lambda_1 + \lambda_2$.
+
+\todo{Read Page 55-56, Joint Probability Distribution of Functions of Random Variables }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Moment Generating Functions}
+\paragraph{Definition} The \impo{moment generating function $\phi(t)$} of the random variable $X$ is defined for all values $t$ by
+\begin{align*}
+\phi(t) = E[e^{tX}] = 
+\begin{cases}
+\sum_x e^{tx} p(x) & \mbox{if X is discrete} \\
+\sum_{-\infty}^\infty e^{tx} f(x) dx \mbox{if $X$ is continous}
+\end{cases}
+\end{align*}
+
+We call $\phi(t)$ the moment generating function \impo{because all of the moments of $X$ can be obtained by successively differentiating $\phi(t)$}. For example
+\begin{align*}
+\phi'(t) = \frac{d}{dt} E[e^{tX}] = E[Xe^{tX}]
+\end{align*}
+
+Hence, $\phi'(0) = E[X]$
+
+Similarly, $\phi''(t) = E[X^2 e^{tX}]$ and so $\phi''(0) = E[X^2]$.
+
+In general, the $n$-th derivative of $\phi(t)$ evaluated at $t=0$ equals $E[X^n]$, that is
+\begin{align*}
+\phi^n(t) = E[X^n], n \geq 1
+\end{align*}
+
+\paragraph{Example-The Binomial Distribution with Parameters n and p} 
+\begin{align*}
+\phi(t) & = \sum^n_{k=0} \impo{e^{tk}} \binom{n}{k} p^k (1-p)^{n-k} \\
+& = \sum^n_{k=0} \binom{n}{k} (pe^t)^k(1-p)^{n-k} \\
+& =(pe^t+1-p)^n
+\end{align*}
+
+thus $\phi'(t) = n([e^t+1-p)^{n-1} pe^t$, and so $E[X] = \phi'(0) = np$.
+and by calculate $\phi''(t)$, we get $E[X^2] = \phi''(0) = n(n-1)p^2 + np$. 
+
+
+\paragraph{Sum of Independent Random Variables} Moment generating function of the sum of independent random variables is just the product of the individual moment generating functions. 
+
+To see this, suppose that $X$ and $Y$ are independent and have moment generating function $\phi_X(t)$ and $\phi_Y(t)$, respectively. Then $\phi_{X+Y}(t)$, the moment generating function of $X+Y$, is given by
+\begin{align*}
+\phi_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}] E[e^{tY}] = \phi_X(t) \phi_Y(t)
+\end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
