@@ -534,12 +534,81 @@ thus $\phi'(t) = n([e^t+1-p)^{n-1} pe^t$, and so $E[X] = \phi'(0) = np$.
 and by calculate $\phi''(t)$, we get $E[X^2] = \phi''(0) = n(n-1)p^2 + np$. 
 
 
-\paragraph{Sum of Independent Random Variables} Moment generating function of the sum of independent random variables is just the product of the individual moment generating functions. 
+\paragraph{Example: The Normal Distribution with Parameters $\mu$ and $\sigma^2$} The moment generating function for a standard normal random variable is obtained as follows
+\begin{align*}
+E[e^{tZ}] & = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^\infty e^{tx} e^{-x^2/2} dx \\
+& = e^{t^2/2}
+\end{align*}
+
+If $Z$ is a standard normal, then $X = \sigma Z + \mu$ is normal with parameters $\mu$ and $\sigma^2$, therefore
+\begin{align*}
+\phi(t) = E[e^{tX}] & = E[e^{t(\sigma Z + \mu}] \\
+& = e^{t\mu} E[e^{t \sigma Z}] \\
+& = exp\{\frac{\sigma^2 t^2}{2} + \mu t\}
+\end{align*}
+
+
+
+\paragraph{Sum of Independent Random Variables} Moment generating function of the \impo{sum of independent random variables} is just the \impo{product} of the individual moment generating functions. 
 
 To see this, suppose that $X$ and $Y$ are independent and have moment generating function $\phi_X(t)$ and $\phi_Y(t)$, respectively. Then $\phi_{X+Y}(t)$, the moment generating function of $X+Y$, is given by
 \begin{align*}
 \phi_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}] E[e^{tY}] = \phi_X(t) \phi_Y(t)
 \end{align*}
+
+
+\paragraph{\impo{Laplace transform}} For a nonnegative random variable $X$, it is often convenient to define its \emph{Laplace transform} $g(t), t \geq 0$, by
+\begin{align*}
+g(t) = \phi(-t) = E[e^{-tX}] 
+\end{align*}
+
+This is, the Laplace transform evaluated at $t$ is just the moment generating function evaluated at $-t$. The \impo{advantage} of dealing with the Laplace transform, rather than the moment generating function, when the random variable is nonnegative is that if $X \geq 0$ and $t \geq 0$, then
+\impo{
+\begin{align*}
+0 \leq e^{-tX} \leq 1
+\end{align*}
+}
+
+That is, the Laplace transform is always between $0$ and $1$. As in the case of moment generating functions, it remains true that nonnegative random varaibles that have \impo{the same Laplace transform must also have the same distribution}.
+
+
+\subsection{The Joint Distribution of the Sample Mean and Sample Variance from a Normal Distribution}
+Let $X_1, \cdots, X_n$ be independent and identically distributed random variables, each with mean $\mu$ and variance $\sigma^2$. The random variable $S^2$ is defined by
+\begin{align*}
+S^2 = \sum^n_{i=1} \frac{(X_i - \bar{X})^2}{n-1}
+\end{align*}
+is called the \impo{sample variance} of the data. To compute $E[S^2]$, we use the identity
+\begin{align*}
+\sum_n{i=1} (X_i - \bar{X})^2 = \sum^n_{i=1} (X_i - \mu)^2 - n(\bar{X} - \mu)^2
+\end{align*}
+
+which is proven as follows
+\begin{align*}
+\sum^n_{i=1} (X_i - \bar{X}) & = \sum^n_{i=1} (X_i - \mu + \mu - \bar{X})^2 \\
+& = \sum^n_{i=1} (X_i - \mu)^2 - n(\bar{X} - \mu)^2
+\end{align*}
+
+Using this identity, we have
+\begin{align*}
+E[(n-1)S^2] & = \sum^n_{i=1} E[(X_i - \mu)^2] - nE[(\bar{X} - \mu)^2] \\
+& = n \sigma^2 - n Var(\bar{X}) \\
+& = n \sigma^2 - n *\frac{\sigma^2}{n} \\
+& = (n-1) \sigma^2
+\end{align*}
+
+Thus, we obtain the preceding that 
+\begin{align*}
+E[S^2] = \sigma^2
+\end{align*}
+
+
+\paragraph{Chi-square random variable} If $Z_1, \cdots, Z_n$ are independent standard normal random variables, then the random variable $\sum^n_{i=1} (Z_i)^2$ is said to be a \impo{chi-squared random variable} with \impo{n degrees of freedom}.
+
+\todo{review chi-square}
+
+\begin{proposition}
+If $X_1, \cdots, X_n$ are independent and identically distributed normal random variables with mean $\mu$ and variance $\sigma^2$, then the sample mean $\bar{X}$ and the sample variance $S^2$ are independent. $\bar{X}$ is a normal random variable with \impo{mean $\mu$ and variance $\sigma^2/n$}; $\frac{(n-1)\S^2}{\sigma^2}$ is a chi-squared random variable with $(n-1)$ degrees of freedom.
+\end{proposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
