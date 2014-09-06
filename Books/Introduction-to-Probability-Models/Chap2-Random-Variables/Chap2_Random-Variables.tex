@@ -6,7 +6,7 @@
 
 \usepackage{subfigure}
 
-\newtheorem{theorem}{Theorem} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{definition}{Definition} \newtheorem{assumption}{Assumption} \newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem} \newtheorem{lemma}{Lemma} \newtheorem{proposition}{Proposition} \newtheorem{corollary}{Corollary} \newtheorem{definition}{Definition} \newtheorem{assumption}{Assumption} \newtheorem{example}{Example}
 \newtheorem{observation}[theorem]{Observation}
 %\newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \newtheorem{remark}{Remark} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{fact}{Fact} \newtheorem{invariant}{Invariant}
 
@@ -358,5 +358,82 @@ E[X_i] & = P\{X_i = \} \\
 
 Therefore, $E[X] = 25*(1-(\frac{24}{25})^25)$.
 
+
+\subsection{Covariance and Variance of Sums of Random Variables}
+The covariance of any two random variables $X$ and $Y$, denoted by $cov(X,T)$, is defined by
+\begin{align*}
+Cov(X,Y) & = E[(x-E[X])(Y-E[Y])] \\
+& = E[XY - XE[Y] - YE[X] + E[X]E[Y]] \\
+& = E[XY] -E[X]E[Y] - E[Y]E[X] + E[X]E[Y] \\
+& = E[XY] - E[X]E[Y]
+\end{align*}
+Note that if $X$ and $Y$ are \impo{independent}, then it follows that \impo{$Cov(X,Y) = 0$}.
+
+\paragraph{Properties of Covariance} For any random variables $X, Y, 
+Z$ and constant $c$
+\begin{itemize}
+\item $Cov(X,X) = Var(X)$
+\item $Cov(cX,Y) = cCov(X,Y)$
+\item $Cov(X,Y+Z) = Cov(X,Y) + Cov(X,Z)$
+\end{itemize}
+
+For the last property, we can easily generalizes to give the following result
+\impo{
+\begin{align*}
+cov(\sum^n_{i=1} X_i, \sum^m_{j=1} Y_j) = \sum^n_{i=1} \sum^m_{j=1} Cov(X_i, Y_j)
+\end{align*}}
+
+A useful expression for the variance of the sum of random variables can be obtained as follows
+\begin{align*}
+var(\sum^n_{i=1} X_i) & = Cov(\sum^n_{i=1} X_i, \sum^n_{j=1} X_j) \\
+& = \sum^n_{i=1} \sum^n_{j=1} Cov(X_i, X_j) \\
+& = \sum^n_{i=1} Cov(X_i,X_i) + \sum^n_{i=1} \sum_{j \neq i} Cov(X_i, X_j) \\
+& = \sum^n_{i=1} Var(X_i) + 2 \sum^n_{i=1} \sum_{j < i} Cov(X_i, X_j)
+\end{align*}
+
+If $X_i, i=1,2, \cdots, n$ are independent random variables, then we can get
+\begin{align*}
+Var(\sum^n_{i=1} x_i) = \sum^n_{i=1} Var(X_i)
+\end{align*}
+
+\begin{proposition}
+Suppose that $X_1, \cdots, X_n$ are independent and identically distributed with expected value $\mu$ and variance $\sigma^2$. Then\\
+(a) $E[\bar{X}] = \mu$ \\
+(b) $Var(\bar{X}] = \sigma^2/n$ \\ 
+(c) $Cov(\bar{X}, X_i - \bar{X}) = 0, i=1,\cdots, n.$
+\end{proposition}
+
+\paragraph{Example} Compute the variance of a \impo{Binomial Random Variable} $X$ with parameters $n$ and $p$.
+
+\textbf{Solution:} Since such a random variable represents the number of successes in $n$ independent trails when each trail has a common probability $p$ of being a success, we may write
+\begin{align*}
+X = X_1 + X_2 + \cdots X_n
+\end{align*}
+
+where $X_i$ are independent \impo{Bernoulli random variables} such that 
+\begin{align*}
+X_i = 
+\begin{cases}
+1 & \mbox{ if the ithe trial is a success} \\
+0 & \mbox{ otherwise}
+\end{cases}
+\end{align*}
+
+Hence we have
+\begin{align*}
+Var(X) = Var(X_1) + Var(X_2) + \cdots + Var(X_n)
+\end{align*}
+
+since $Var(X_i) = E[(X_i)^2] - (E[X_i])^2 = p - p^2$ since $(X_i)^2 = X_i$.
+
+And thus $Var(X) = np(1-p)$.
+
+\paragraph{\impo{Hypergeometric}} The random variable $\sum^n_{i=1} X_i$ can be thought of representing the number of white balls obtained when $n$ balls are randomly selected from a population consisting of $Np$ white and $N-Np$ black balls. Such a random variable is called \impo{hypergeometric} and has a probability mass function given by 
+\begin{align*}
+P\{\sum^n_{i=1} X_i = k\} = \frac{\binom{Np}{k} \binom{N-Np}{n-k}}{\binom{N}{n}}
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
