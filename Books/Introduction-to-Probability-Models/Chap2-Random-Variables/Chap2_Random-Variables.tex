@@ -610,5 +610,103 @@ E[S^2] = \sigma^2
 If $X_1, \cdots, X_n$ are independent and identically distributed normal random variables with mean $\mu$ and variance $\sigma^2$, then the sample mean $\bar{X}$ and the sample variance $S^2$ are independent. $\bar{X}$ is a normal random variable with \impo{mean $\mu$ and variance $\sigma^2/n$}; $\frac{(n-1)\S^2}{\sigma^2}$ is a chi-squared random variable with $(n-1)$ degrees of freedom.
 \end{proposition}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Distribution of the Number of Events that Occur}
+
+\subsection{Define $A$, $B$, $B^c$}
+Consider arbitrary events $A_1, \cdots, A_n$, and let $X$ denote the number of these events that occur. We will determine the probability mass function of $X$. To begin with, $1 \leq k \leq n$, let 
+\begin{align*}
+S_k = \sum_{i1 < ... < ik} P(A_{i1}...A_{ik})
+\end{align*}
+equal the sum of the probabilities of all the $\binom{n}{k}$ intersections of $k$ distinct events, and note that the \impo{inclusion-exclusion} identity states that
+\begin{align*}
+P(X>0) = P(\cup^n_{i=1} A_i) = S_1 - S_2 + S_3 - \cdots + (-1)^{n+1} S_n
+\end{align*}
+
+Now, fix $k$ of the n events, say $A_{i1}, \cdots, A_{ik}$, and let 
+\begin{align*}
+A = \cap^k_{j=1} A_{ij}
+\end{align*}
+
+be the event that $k$ of these events occur. Also let
+\begin{align*}
+B = \cap_{j \not\in {i_1, \cdots, i_k} }A^c_j 
+\end{align*}
+be the events that none of the other $(n-k)$ events occur. Consequently, AB is the event that $A_{i1}, \cdots, A_{ik}$ are the only events to occur. Because
+\begin{align*}
+A = AB \cup AB^c
+\end{align*}
+
+Because $B^c$ is at least one of the events $A_j, j \neq {i_1, \cdots, i_k}$, occur, we see that 
+\begin{align*}
+B^c = \cup_{j \not\in {i_1, \cdots, i_k}} A_j
+\end{align*}
+
+Thus
+\begin{align*}
+P(AB^c) = P(A \cup_{j \not\in \{i_1, \cdots, i_k\}} A_j) = P(\cup_{j \not\in \{i_1, \cdots, i_k\}} AA_j)
+\end{align*}
+
+\subsection{Calculate $P(X=k)$}
+Applying the \impo{inclusion-exclusion} identity gives
+\begin{align*}
+P(AB^c) = \sum_{j \not\in \{i_1, \cdots, i_k\}} P(AA_j) - \sum_{j_1 < j_2 \not\in \{i_1, \cdots, i_k\}} P(AA_{j_1}A_{j_2}) \\
++ \sum_{j_1 < j_2 < j_3 \not\in \{i_1, \cdots, i_k\}} P(AA_{j_1}A_{j_2}A_{j_3})
+\end{align*}
+
+using that $A = \cap^k_{j=1} A_{ij}$, the preceding shows that the probability that the $k$ events $A_{i1}, \cdots, A_{ik}$ are the only events to occur is
+\begin{align*}
+P(A) - P(AB^c) & = P(A_{i1}, \cdots, A_{ik}) - \sum_{j \not\in \{i_1, \cdots, i_k\}} P(A_{i1}, \cdots, A_{ik}A_j)\\
+& +  \sum_{j_1 < j_2 \not\in \{i_1, \cdots, i_k\}} P(A_{i1}, \cdots, A_{ik}A_{j_1}A_{j_2})  - \sum_{j_1 < j_2 < j_3 \not\in \{i_1, \cdots, i_k\}} P(A_{i1}, \cdots, A_{ik}A_{j_1}A_{j_2}A_{j_3}) + \cdots
+\end{align*}
+
+Summing the preceding over all sets of $k$ distinct indices yields
+\begin{align*}
+P(X=k) & = \sum_{i_1 < \cdots < i_k} P(A_{i1}, \cdots, A_{ik}) - \sum_{i_1 < \cdots < i_k} \sum_{j \not\in \{i_1, \cdots, i_k\}} P(A_{i1}, \cdots, A_{ik}A_j)\\
+& +  \sum_{i_1 < \cdots < i_k} \sum_{j_1 < j_2 \not\in \{i_1, \cdots, i_k\}} P(A_{i1}, \cdots, A_{ik}A_{j_1}A_{j_2})  - \cdots
+\end{align*}
+
+First, note that 
+\begin{align*}
+\sum_{i_1, \cdots, i_k} P(A_{i1} \cdots A_{ik}) = S_k
+\end{align*}
+
+The probability of every intersection of $k+1$ distinct events $A_{m1} \cdots A_{m{k+1}}$ will appear $\binom{k+1}{k}$ times in this multiple summation. This is so because each of $k$ of of its indices to play the role of $i_1, \cdots, i_k$ and the other to play the role of $j$ results in the addition of therm $P(A_{m1} \cdots A_{mk+1})$, hence
+\begin{align*}
+\sum_{i_1 < \cdots i_k} \sum_{j \not\in \{i_1, \cdots, i_k\}} P(A_{i1} \cdots A_{ik} A_j) & = \binom{k+1}{k} \sum_{m_1 < \cdots < mk+1} P(A_{m1} < \cdots < A_{mk+1}) \\
+& = \binom{k+1}{k} S_{k+1}
+\end{align*}
+
+Repeating this argument for the rest of the multiple summations yields the result
+\begin{align*}
+P(X=k) = S_k - \binom{k+1}{k} S_{k+1} + \binom{k+2}{k} S_{k+2} - \cdots + (-1)\binom{n}{k}S_n
+\end{align*}
+
+The preceding can be written as 
+\begin{align*}
+P(X=k) = \sum^n_{j=k} (-1)^{k+j} \binom{j}{k} S_j
+\end{align*}
+
+
+\subsection{Calculate $P(X \geq k)$} We will prove
+\begin{align*}
+P(X \geq k) = \sum^n_{j=k} (-1)^{k+j} \binom{j-1}{k-1} S_j
+\end{align*}
+
+This proof uses a \impo{backwards mathematical induction} that starts with $k=n$. Now when $k=n$ the proceeding identity states that 
+\begin{align*}
+P(X=n) = S_n
+\end{align*}
+which is true. So assume that 
+\begin{align*}
+P(X \geq k+1) \sum^n_{j=k+1} (-1)^{k+1+j} \binom{j-1}{k}S_j
+\end{align*}
+
+But then 
+\begin{align*}
+P(X \geq k) & = P(X=k) + P(X \geq k+1) \\
+& = \sum^n_{j=k} (-1)^{k+j} \binom{j}{k} S_j + \sum^n_{j=k+1} (-1)^{k+1+j} \binom{j-1}{k} S_j \\
+& = \sum^n_{j=k} (-1)^{k+j} \binom{j-1}{k-1} S_j
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
