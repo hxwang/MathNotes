@@ -708,5 +708,60 @@ P(X \geq k) & = P(X=k) + P(X \geq k+1) \\
 & = \sum^n_{j=k} (-1)^{k+j} \binom{j-1}{k-1} S_j
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Limit Theorems}
+\paragraph{Markov's Inequality} If $X$ is a random variable that takes only nonnegative values, then for any value $a > 0$
+\begin{align*}
+P\{X \geq a\} \leq \frac{E[X]}{a}
+\end{align*}
+
+\begin{proof}
+We give a proof for the case where $X$ is continuous with density $f$.
+\begin{align*}
+E[X] & = \int_0^{\infty} xf(x)dx \\
+& = \impo{\int_0^a} x(f)dx + \impo{\int_a^{\infty}} xf(x)dx \\
+& \geq \int_a^{\infty} xf(x)dx \\
+& \geq \int_a^{\infty} \impo{a}f(x)dx \\
+& = a \int_a^{\infty} f(x) dx \\
+& = a P{X \geq a}
+\end{align*}
+\end{proof}
+
+
+\paragraph{Chebyshev's Inequality} If $X$ is a random variable with mean $\mu$ and variance $\sigma^2$, for any value $k >0$,
+\begin{align*}
+P\{|X-\mu| \geq k\} \leq \frac{\sigma^2}{k}
+\end{align*}
+
+\begin{proof}
+Since $(X-\mu)^2$ is a nonnegative random variable, we can \impo{ apply Markov's inequality}(with $a = k^2$) to obtain
+\begin{align*}
+P\{ (X-\mu)^2 \geq k^2\} \leq \frac{E[(X-\mu)^2]}{k^2}
+\end{align*}
+
+But since $(X-\mu)^2 \geq k^2$ if an only if $|X-\mu| \geq k$, the preceding is equivalent to 
+\begin{align*}
+P\{\|X-\mu| \geq k\} \leq \frac{E[(X-\mu)^2]}{k^2} = \frac{\sigma^2}{k^2}
+\end{align*}
+\end{proof}
+
+\paragraph{Importance} The importance of Markov's and Chebyshev's inequalities is that they enable us to \impo{derive bounds} on probabilities when only the mean, or both the mean and the variance, of the probability distribution are known. Of course, if the actual distribution were known, then the desired probabilities can be exactly computed, and we would not need to resort bounds.
+
+
+\paragraph{Strong Law of Large Numbers} It states that the \impo{average} of a sequence of independent random variables having the same distribution will, with probability $1$, \impo{converge to the mean} of that distribution.
+
+
+\paragraph{Central Limit Theorem} Let $X_1, X_2, \cdots$ be a sequence of independent, identically distributed random variables, each with mean $\mu$ and variance $\sigma^2$. Then the distribution of 
+\begin{align*}
+\frac{X_1 + X_2 + \cdots + X_n - n\mu}{\sigma \sqrt{n}}
+\end{align*}
+
+tends to the standard normal as $n \to \infty$. That is
+\begin{align*}
+P\{\frac{X_1 + X_2 + \cdots + X_n - n\mu}{\sigma \sqrt{n}}\} 
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
