@@ -761,7 +761,63 @@ tends to the standard normal as $n \to \infty$. That is
 P\{\frac{X_1 + X_2 + \cdots + X_n - n\mu}{\sigma \sqrt{n}}\} 
 \end{align*}
 
+Note that this theorem holds for \impo{any distribution} of the $X_i$s. Herein lies its power.
 
+If $X$ is binomially distributed with parameters $n$ and $p$, then $X$ has the same distribution as the sum of $n$ independent Bernoulli random variables, each with parameter $p$. Hence the distribution of 
+\begin{align*}
+\frac{X-E[X]}{\sqrt{Var(x）}} =  \frac{X-np}{\sqrt{np(1-p)}}
+\end{align*}
+
+approach the standard normal distribution as $n$ approaches $\infty$. The normal distribution will, in general, be quite good for values of $n$ satisfying $np(1-p) \geq 10$.
+
+
+\paragraph{Example-Normal Approximation to the Binomial} See page 74.
+
+\paragraph{Example} The lifetime of a special type of battery is a random varaible which mean $40$ hours and standard deviation $20$ hours. A battery is used until it fails, at which point it is replaced by a new one. Assuming a stockpile of $25$ such batteries, the lifetime of which are independent, approximate the probability that over $1100$ hours of use can be obtained. 
+
+\textbf{Solution:} If we let $X_i$ denote the lifetime of the $i$-th battery to be put int use, then we desire $p = \{X_1 + \cdots + X_{25} > 10000\}$, which is approximated as follows
+\begin{align*}
+p & = P\{\frac{X-1 + \cdots + X_{25}-20*25}{20\impo{\sqrt{25}}} > \frac{1100-1000}{20\sqrt{25}}\} \\
+& \approx P\{N(0,1) > 1\} \\
+& = 1- \phi(1) \\
+& \approx 0.1587
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Stochastic Process}
+\paragraph{Definition} \emph{A stochastic process} $\{X(t), t \in T\}$ is a collection of random variables. That is, for each $t \in T$, $X(t)$ is a random variable. The index $t$ is often interpreted as \impo{time} and, as a result, we refer $X(t)$ as the state of the process at time $t$.
+
+A stochastic process is a family of random variables that \impo{describes the evolution through time of some (physical) process}.
+
+\paragraph{Example} Consider a particle that moves along a set of $m=1$ nodes, labeled $0,1, \cdots, m$, that are arranged around a circle. Suppose now that the particle starts at $0$ and continues to move around according to the preceding rules until all the nodes $1,2, \cdots, m$ have been visited. What is the probability that node $i, i=1,2,\cdots, m$ is the last one visited?
+
+\textbf{Solution} We consider two neighbors $i-1$ and $i+1$ of $i$. If it is the first time at $i-1$, then $i$ will be the last to be visited only if $i+1$ has been visited before. 
+
+The probability that a particle at node $i-1$ will visited $i+1$ before $i$ is just the probability that a particle will progress \impo{$m-1$} steps in a specified direction before progressing one step in the other direction. That is,  it is equal to the probability that a gambler who starts with one unit, and wins one when a fiar coin turns up heads and loses one when it turns up tails, will \impo{have his fortune go up by $m-1$ before he goes broke
+} \question{why???}. Hence, because \impo{the preceding implies that the probability that node $i$ is the last node visited is the same for all $i$}, and because this probabilities must sum up to $1$, we obtain
+\begin{align*}
+p\{\mbox{i is the last node visited}\} = \frac{1}{m}, i = 1, 2, \cdots, m
+\end{align*}
+
+
+\paragraph{Remark} A gambler who is equally likely to either win or lose one unit on each gamble will be down $n$ before being up $1$ with probability $\frac{1}{n+1}$; or equivalently
+\begin{align*}
+p\{\mbox{gambler is up to 1 before being down $n$}\} = \frac{n}{n+1}
+\end{align*}
+
+Suppose now we ant the probability that the gambler is up $2$ before being down $n$. Upon conditioning on whether he reaches up $1$ before down $n$, we obtain
+\begin{align*}
+& p\{\mbox{gambler is up $2$ before being down $n$}\}  \\
+& = p\{\mbox{up 2 before down n | up 1 before down n|}\}*\frac{n}{n+1} \\
+& = p\{\mbox{up 1 before down n+1}\} \frac{n}{n+1} \\
+& = \frac{n+1}{n+2} * \frac{n}{n+1} \\
+& = \frac{n}{n+2}
+\end{align*}
+
+Repeating this, we get 
+\begin{align*}
+p\{ \mbox{gambler is up $k$ before downing $n$}\} = \frac{n}{n+k}
+\end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
