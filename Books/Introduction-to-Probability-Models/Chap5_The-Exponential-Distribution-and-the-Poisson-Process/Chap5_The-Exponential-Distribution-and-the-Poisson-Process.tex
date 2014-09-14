@@ -1,0 +1,141 @@
+%\documentclass[10pt,conference]{IEEEtran}
+
+\documentclass[10 pt,final]{article}
+
+\usepackage{amssymb} \usepackage{amsmath} \usepackage{amsthm} \usepackage{algorithm} \usepackage{algorithmic} \usepackage{url} \usepackage[margin=1in]{geometry}
+
+\usepackage{subfigure}
+
+\newtheorem{theorem}{Theorem} \newtheorem{lemma}{Lemma} \newtheorem{proposition}{Proposition} \newtheorem{corollary}{Corollary} \newtheorem{definition}{Definition} \newtheorem{assumption}{Assumption} \newtheorem{example}{Example}
+\newtheorem{observation}[theorem]{Observation}
+%\newtheorem{theorem}{Theorem} \newtheorem{definition}{Definition} \newtheorem{remark}{Remark} \newtheorem{lemma}{Lemma} \newtheorem{corollary}{Corollary} \newtheorem{fact}{Fact} \newtheorem{invariant}{Invariant}
+
+\usepackage{color}
+\newcounter{todocounter}
+\newcommand{\todo}[1]{\stepcounter{todocounter}\textcolor{red}{to-do\#\arabic{todocounter}: #1}}
+\newcommand{\impo}[1]{{\color{magenta} #1}}
+\newcommand{\question}[1]{{\color{blue} #1}}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{./Figures/}}
+
+\title{Chap 5 Note: The Exponential Distribution and the Poisson Process}
+
+
+\begin{document}
+
+
+
+%\author{Huangxin Wang\thanks{Department of Computer Science, George Mason University. Fairfax, VA 22030. Email: \textsf{hwang14@gmu.edu}}}
+\date{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Exponential Distribution} 
+\subsection{Definition}
+
+A continuous random variable $X$ is said to have an exponential distribution with parameter $\lambda, \lambda > 0$, if its probability density function is given by
+\begin{align*}
+f(x) =
+\begin{cases}
+\lambda e^{-\lambda x} & x \geq 0\\
+0 & x <0
+\end{cases}
+\end{align*}
+
+or, equivalently, if its cdf is given by
+\begin{align*}
+F(x) = \int_{-\infty}^{x} f(y)dy = 
+\begin{cases}
+1 -e^{-\lambda x} & x \geq 0 \\
+0 & x <0
+\end{cases}
+\end{align*}
+
+Also, we have \impo{$P\{x>\beta\} = e^{-\lambda \beta}$}.
+
+Check page 278-279 for the calculation of moment, mean, variance
+
+\paragraph{Example} (Exponential Random Variables and Expected Discounted Returns) Suppose that you are receiving rewards at randomly changing rates continuously throughout time. Let $R(x)$ denote the random rate at which you are receiving rewards at time $x$. For a value $\alpha \geq 0$, called the discount rate, the quantity 
+\begin{align*}
+R = \int_0^{\infty} e^{-\alpha x} R(x) dx
+\end{align*}
+
+represents the total discounted reward.  Then we have
+\begin{align*}
+\int_0^{\infty} e^{-\alpha x} E[R(x)] = E[\int_0^T R(x)dx]
+\end{align*}
+
+where $T$ is an exponential random variable with rate $\alpha$. Check page 279 for the proof.
+
+Thus, \impo{the expected total discounted reward is equal to the expected total(undiscounted) reward eared by a random time that is exponentially distributed with rate equal to the discount factor.}
+
+
+\subsection{Properties of the Exponential Distribution}
+\paragraph{MemoryLess} A random variable $X$ is said to be without of memory, or memoryless, if
+\begin{align*}
+P\{X > s+t| X>t\} = P\{X>s\} \mbox{  for all $s,t \geq 0$}
+\end{align*}
+
+The condition of above equation is equivalent to
+\begin{align*}
+\frac{P\{X>s+t, X>t\}}{P\{X>t\}} = P\{X>s\}
+\end{align*}
+
+The following equation is satisfied if $X$ is exponentially distributed. Thus, exponentially distributed random variables are memoryless.
+
+\impo{
+\begin{align*}
+P\{X>s+t\} = P\{X>s\} * P\{X>t\}
+\end{align*}
+}
+
+\paragraph{Example} Consider a post office that is run by two clerks. Suppos that when Mr. Smith enters the system he discovers that Mr. Jones is being served by one of the clerks and Mr. Brown by the other. Suppose also that Mr. Smith is told that his service will begin as soon as either Jones or Brown leaves. If the amount of time that a clerk spends with customer is exponentially distributed with mean $1/\lambda$, what is the probability that, of the three customers, Mr. Smith is the last to leave the post office?
+
+\textbf{Solution:} Consider the time at which Mr. Smith first finds a free clerk. At this point either Mr. Jones or Mr. Brown would have just left and the other one would still be in service. \impo{However, by the lack of memory of the exponential, it follows that the amount of time that this other man(either Jones or Brown)} would still have to spend in the post office is exponentially distributed with mean $1/\lambda$. That is, \impo{it is the same as if he were just starting his service at this point}. Hence, by symmetry, the probability that he finishes before Smith must equal $\frac{1}{2}$.
+
+\paragraph{Example(Mean and Variance of New Variable)} The dollar amount of damage involved in an automobile accident is an exponential random variable with mean $1000$. Of this, the insurance company only pays the amount exceeding(the deduction amount of) 400. Find the expected value and the standard deviation of the amount of the insurance company pays per accident.
+
+\textbf{Solution:} If $X$ is the dollar amount of damage resulting from an accident, then the amount paid by the insurance company is $(x-400)^+$. Let
+\begin{align*}
+I =
+\begin{cases}
+1 & \mbox{ if $X> 400$} \\
+0 & \mbox{ if $X \leq 400$}
+\end{cases}
+\end{align*}
+
+Let $Y$ be the amount paid. By the lack of memory property of the exponential, then we have
+\begin{align*}
+& E[Y|I=1] = 1000 \\
+& E[Y|I=0] = 0 \\
+& Var(Y|I=1) = (1000)^2 \\
+& Var(Y|I=0) = 0
+\end{align*}
+
+which can be conveniently written as
+\impo{
+\begin{align*}
+& E[Y|I] = E[Y|I=1]*1 + E[Y|I=0]*0 = 10^3 I \\ 
+& Var(Y|I) = 10^6 I
+\end{align*}
+}
+
+Because I is a Bernoulli random variable that is equal to $1$ with probability \impo{$e^{-0.4}$}, we obtain
+\begin{align*}
+E[Y] = E[E[Y|I]] = 10^3*E[I] = 10^3*e^{-0.4}
+\end{align*}
+
+and, by the \impo{conditional variance formula}, we have
+\begin{align*}
+Var(Y) & = E[Var(Y|I)] + Var(E[Y|I]) \\
+& = 10^6 * e^{-0.4} + 10^6 *(1-e^{-0.4})*e^{-0.4}
+\end{align*}
+
+Note we use the property that the variance of a Bernoulli random variable with parameter $p$ is $p(1-p)$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
