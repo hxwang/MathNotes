@@ -136,6 +136,72 @@ Var(Y) & = E[Var(Y|I)] + Var(E[Y|I]) \\
 \end{align*}
 
 Note we use the property that the variance of a Bernoulli random variable with parameter $p$ is $p(1-p)$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Example} How much should be ordered so as to maximize the stores' expected profit.
+
+\textbf{Comments:} check page $283$ for more details. The memoryless property being used is 
+\begin{align*}
+E[(X-t)^+] & = E[(X-t)^+ | X>t] P(X > t) + E[(X-t)^+ | X \leq t] P(X \leq t) \\
+& = \impo{E[(X=t)^+ | X>t]} * e^{-\lambda t} \\
+& = \impo{\frac{1}{\lambda}} * e^{-\lambda t} 
+\end{align*}
+
+\subsection{Failure (or hazard) rate function} Consider a continuous positive random variable $X$ having distribution function $F$ and density $f$. The \emph{failure (or hazard) function rate} is defined by
+\begin{align*}
+r(t) = \frac{f(t)}{1-F(t)}
+\end{align*}
+
+To interpret $r(t)$, suppose that an item, having lifetime $X$, has survived for $t$ hours, and we desire the probability that it does not survive for an additional time $dt$. That is, consider $P\{X \in (t, t+dt) | X>t\}$. Now
+\begin{align*}
+P\{X \in (t, t+dt)| X>t\} & = \frac{P\{X \in (t, t+dt) | X>t\}}{P\{X>t\}} \\
+& = \frac{P\{X \in (t, t+dt)\}}{P\{X>t\}} \\
+& \approx \frac{f(t)dt}{1-F(t)} \\
+& r(t)dt
+\end{align*}
+
+\begin{align*}
+r(t) = \frac{f(t)}{1-F(t)} = \lambda
+\end{align*}
+
+Thus the failure rate function for the exponential distribution is constant. The parameter $\lambda$ is often referred to as the rate of the distribution.
+
+\paragraph{Example} Let $X_1, \cdots, X_n$ be independent exponential random variables with respective rates $\lambda_1, \cdots, \lambda_n$, where $\lambda_i \neq \lambda_j$ when $i \neq j$. Let $T$ be independent of these random variables and suppose that
+\begin{align*}
+\sum^n_{i=1} P_j = 1  \mbox{ ,where $P_j = P\{T = j\}$}
+\end{align*}
+
+The random variable $X_T$ is said to be a \impo{hyperexponential random variable}. 
+
+\impo{Interpret $X_T$:} Consider a bin contains $n$ different types of batteries, with a type $j$ battery lasting for an exponential distributed time with rate $\lambda_j, j=1, \cdots, n$. Suppose further that $P_j$ is the proportion of batteries in the bin that are type $j$.  If a battery is randomly chosen, then the lifetime of the battery selected will have \impo{hyperexponential distribution}
+
+To obtain the distribution function $F$ of $X= X_T$, condition on $T$. This yields,
+\begin{align*}
+1 - F(t) & = P\{X>t\} \\
+& = \sum^n_{i=1} P\{X>t|T=i\} P\{T=i\} \\
+& \sum^n_{i=1} P_i e^{-\lambda_i t}
+\end{align*}
+
+Differentiate it, we get $f(t)$, then we can get $r(t)$. 
+
+We note that the failure rate function can also be written as
+\begin{align*}
+r(t) = \sum^n_{j=1} \lambda_j P\{T=j |X>t\}
+\end{align*}
+
+If $\lambda_1 < \lambda_i$, for any $i>1$, then when $t \to \infty$, we have
+\begin{align*}
+P\{T=1| X>t\}  \approx 1
+\end{align*}
+
+Thus we have
+\begin{align*}
+\lim_{t \to \infty} r(t) = \min_{i} \lambda_i
+\end{align*}
+
+i.e., the longer a battery lasts, the more likely it is a battery type with the smallest failure rate.
+
+\subsection{Further Properties of the Exponential Distribution}
+.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
