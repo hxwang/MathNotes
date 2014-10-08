@@ -7,7 +7,7 @@
 ### Contents
 | Chapter |               Notes                                       | Status  |
 | --------|:---------------------------------------------------------| :----------|
-| 1       | [Introduction to Probability]()                           |     |
+| 1       | [Introduction to Probability](./Chap1-Introduction-to-Probability-Theory)                           |     |
 | 2       | [Random Variables]()                                      |     |
 | 3       | [Conditional Probability and Conditional Expectation]()   |     |
 | 4       | [Markov Chains]() | |
