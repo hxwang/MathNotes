@@ -11,5 +11,5 @@
 | 2       | [Random Variables](./Chap2-Random-Variables)               |     |
 | 3       | [Conditional Probability and Conditional Expectation]()   |     |
 | 4       | [Markov Chains]() | |
-| 5       | [The Exponential Distribution and the Poisson Process]()  |     |
+| 5       | [The Exponential Distribution and the Poisson Process](./Chap5_The-Exponential-Distribution-and-the-Poisson-Process)  |     |
 | 6       | [Continuous-Time Markov Chains]()                         |     |
