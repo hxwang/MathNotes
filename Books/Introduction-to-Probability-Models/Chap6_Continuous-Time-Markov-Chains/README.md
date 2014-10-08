@@ -3,11 +3,11 @@
 - reading status: current (Page357-385), all (Page 357-407)
 
 ### Main Contents
-- birth and death model
+- Birth and death model
     - sample question: calculating the population at time t
 - M/M/k queuing mode
     - sample question: calculate the number of people in the queue
-- reverse Markov chains and its application
+- Reverse Markov chains and its application
     - application: decide the server depature rate base on the arrival rate
 - Chapman-Kolmogorov Equation
     - backward
