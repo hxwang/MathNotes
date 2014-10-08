@@ -6,7 +6,6 @@
 - Inclusion-exclusion principle
 - Conditional probability
 -  Bayes' Law
-- 
 - Randomized algorithm: a trade-off of accuracy and time consumption
     - application
         - randomized approach to min-cut problem
