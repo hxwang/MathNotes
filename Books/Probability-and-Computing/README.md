@@ -1,4 +1,4 @@
-## [Probability and Computing Randomized Algorithms and Probabilistic Analysis](file:///C:/Users/hwang14/Dropbox/1_Gradual_Courses/e-book/Math/Probability/probability%20and%20computing%20_mitzenmacher_upfal.pdf)
+## [Probability and Computing Randomized Algorithms and Probabilistic Analysis](http://dl.acm.org/citation.cfm?id=1076315)
 
 - authors: Michael Mitzenmacher, Eli Upfal
 
