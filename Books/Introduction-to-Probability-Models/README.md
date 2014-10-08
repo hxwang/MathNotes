@@ -6,7 +6,7 @@
 
 ### Contents
 | Chapter |               Notes                                       | Status  |
-| --------|:---------------------------------------------------------:| ----------:|
+| --------|:---------------------------------------------------------| ----------:|
 | 1       | [Introduction to Probability]()                           |     |
 | 2       | [Random Variables]()                                      |     |
 | 3       | [Conditional Probability and Conditional Expectation]()   |     |
