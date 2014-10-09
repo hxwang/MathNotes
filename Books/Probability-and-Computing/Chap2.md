@@ -11,7 +11,7 @@
 - Jensen's inequality
     - for any convex function f, if you connect two points on the graph of the function by a straight line, this line on or above the graph of the function
 - Property of expectation
-    <img src="./figs/lemma2-9.PNG" alt="Drawing" style="width: 200px;" align="center"/>
+    <img src="./figs/lemma2-9.PNG" alt="Drawing" style="width: 50px;"/>
    
 
     
