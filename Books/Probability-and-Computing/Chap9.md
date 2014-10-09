@@ -4,6 +4,8 @@
 
 
 ### Contents
+- definition of entropy
+    - interpretation: if we flip a biased coin with p =3/4 to get head, then we obtain H(3/4) random bits each time we flip this coin
 
 
 ### Questions
