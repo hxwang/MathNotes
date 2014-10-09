@@ -1,6 +1,6 @@
 ## Chap2 Discrete Random Variables and Expectation
 
-- reading status: current[18-28]/all[18-38]
+- reading status: finished on 10/09/2014
 
 
 ### Contents
@@ -17,10 +17,14 @@
     </div>
 - Geometric random variables
     - memoryless
+- Analysis of randomized quicksort
+    - deterministic algorithm with probabilistic analysis, cool!
+    - y_i and y_j will be compare only if they are the first elements chosen from {y_i,...,y_j}, if neither is the first pivot from this set, then they will be seperated into two distinct set and will not be compared.
 
 ### Trick
 - calculating the expectation of a random variable
     - can break the random variable into a sum of some random variables, if the other ramdom variables could be *geometric random varaibles* etc, i.e., have property that can be use directly. Check page-33 for details.
+- page37, when calculating the expectation of quick-sort, changing the index to enable the calculation
     
 ### Question
 - page-24: Taylor's theorem
