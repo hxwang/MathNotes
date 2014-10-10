@@ -7,4 +7,4 @@
 |:--------|:--------|:---------|
 |1         |[Events and Probability](./Chap1.md)  |  Finished on 10/08/2014|
 |2         |[Discrete Random Variables and Expectation](./Chap2.md)| Finished on 10/09/2014|
-|9         |[Entropy, Randomness and Information](./Chap9.md)| ing 10/09/2014|
+|9         |[Entropy, Randomness and Information](./Chap9.md)| Finished on 10/09/2014|
