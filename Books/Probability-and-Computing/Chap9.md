@@ -20,4 +20,5 @@
 - Shannon's Theorem
     - coding theory studies the trade-off between the amount of redundancy required and the probability of decoding error over various types of channel
 
-### Questions
+### TODO
+- I skip the proof of Shannon's theorem for now
