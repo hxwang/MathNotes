@@ -12,7 +12,7 @@
     </div>
 - entropy and bino
     <div style="text-align:center" markdown="1">
-        <img src="./figs/chap9_entropyAndBino.PNG" width="500px" />
+        <img src="./figs/chap9_entropyAndBino.PNG" width="550px" />
     </div>
 
 ### Questions
