@@ -14,7 +14,7 @@
         <img src="./figs/chap9_entropyAndBino.PNG" width="550px" />
     </div>
     - interpretation: if we flip a biased coin with p =3/4 to get head, then we obtain H(3/4) random bits each time we flip this coin 
-    - the bits to represent the possible type of outputs
+    - the bits to represent the possible types of outputs
 - Interpreting entropy
     - e.g., compression
 - Shannon's Theorem
