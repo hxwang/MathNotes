@@ -3,6 +3,7 @@
 
 - author: [Sheldon M. Ross](http://www.ieor.berkeley.edu/People/Faculty/ross.htm)
 - [search contents by index](http://www.sciencedirect.com/science/article/pii/B9780124079489000189#)
+- textbook for course OR645
 
 ### Contents
 | Chapter |               Notes                                       | Status  |
