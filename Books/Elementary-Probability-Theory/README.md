@@ -1,6 +1,6 @@
 ## Elementary Probability Theory
 
-- author: Kai Lai Chung, Farid AitSahlia
+- author: [Kai Lai Chung](http://www.math.ucsd.edu/~williams/chung/obit.html), [Farid AitSahlia](http://bear.warrington.ufl.edu/aitsahlia/)
 
 ### Contents
 | Chapter| Title| Status|
