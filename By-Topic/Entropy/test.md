@@ -1,3 +1,5 @@
+
+
 $$\sum_{i=1}^n a_i=0$$
 $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 
