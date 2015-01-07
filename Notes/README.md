@@ -1,6 +1,6 @@
 ## Math Lecture Notes
 
-- Author:
+- Author: [Richard Weber](http://www.statslab.cam.ac.uk/~rrw1/)
 
 |Name | Plan| Status|
 |:----|:----|:-----|
