@@ -26,4 +26,4 @@ Books
 ### Computing Foundation
 | Book Title        | Authors           | Reading status  |
 |:------------- |:-------------|:-----|
-|[Introduction to the Theory of Computation](Introduction-to-The-Theory-of-Computation)| | 02/20/2015- ing| 
+|[Introduction to the Theory of Computation](Introduction-to-The-Theory-of-Computation)| [Michael Sipser](http://www-math.mit.edu/~sipser/) | 02/20/2015- ing| 
