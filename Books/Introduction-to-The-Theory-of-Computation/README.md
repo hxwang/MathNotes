@@ -6,7 +6,7 @@
 ### Contents
 |Chapter | Contents| Status|
 |:----|:----|:----|
-|Chap 0| Introduction| 02/20/2015- ing|
+|Chap 0| Introduction| 02/20/2015- 02/20/2015|
 |Chap 1| Automata and Languages| |
 |Chap 2| Context-Free Languages| |
 |Chap 3| The Church-Turing Thesis| |
