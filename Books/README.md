@@ -18,3 +18,7 @@ Books
 |:------------- |:-------------|:-----|
 | [Real-Time Systems](./Real-Time-System)    | Jane W.S.Liu|  10/12/2014 - ing |
 
+### Game Theory
+| Book Title        | Authors           | Reading status  |
+|:------------- |:-------------|:-----|
+|[A course in microeconomic theory](./A-Course-In-Microeconomic-Theory)| [DavidM.Kreps](http://www.gsb.stanford.edu/faculty-research/faculty/david-m-kreps)| 02/20/2015- |
