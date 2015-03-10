@@ -1,4 +1,4 @@
-## Regular Languages
+## Chap 1: Regular Languages
 
 ### Contents
 - Finite Automata
