@@ -9,4 +9,4 @@
 |Chap 0| [Introduction](file/chap0.md)| 02/20/2015 - 02/20/2015|
 |Chap 1| [Automata and Languages](file/chap1.md)| 3/8/2015 - 3/10/2015|
 |Chap 2| [Context-Free Languages](file/chap2.md)| 3/10/2015 - 3/10/2015 |
-|Chap 3| [The Church-Turing Thesis](file/chap3.md)| 3/11/2015-ing|
+|Chap 3| [The Church-Turing Thesis](file/chap3.md)| 3/11/2015-3/11/2015|
