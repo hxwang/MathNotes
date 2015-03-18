@@ -17,3 +17,13 @@
 
 ### 3.15, 3.16
 - [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework1Solution.pdf)
+
+### 3.18
+- [ref](http://courses.cs.washington.edu/courses/cse322/10sp/final-solutions.pdf)
+
+![](../figs/3-18.PNG)
+
+### 3.19
+- [ref](http://courses.cs.washington.edu/courses/cse322/10sp/final-solutions.pdf)
+
+![](../figs/3-19.PNG)
