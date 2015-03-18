@@ -38,3 +38,6 @@
 
 ### 3.22
 - [ref](http://www.cs.ucf.edu/courses/cot4210/fall04/answers/hw5sol.pdf)
+
+### Other intersting problems
+- [TM deciders](http://bsd7.cs.sunysb.edu/~stark/CSE540/Handouts/midterm_b_notes.pdf)
