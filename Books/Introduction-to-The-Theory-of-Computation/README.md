@@ -11,3 +11,8 @@
 |Chap 2| [Context-Free Languages](file/chap2.md)| 3/10/2015 - 3/10/2015 |
 |Chap 3| [The Church-Turing Thesis](file/chap3.md)| 3/11/2015-3/11/2015|
 |Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/26/2015 |
+
+### Exercise Answer
+|Chapter | Contents|
+|:----|:----|
+|Chap 3| [3.12,3.13](http://www.cs.ucf.edu/courses/cot4210/fall04/answers/hw6sol.pdf)|
