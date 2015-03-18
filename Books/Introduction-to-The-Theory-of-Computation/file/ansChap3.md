@@ -14,3 +14,6 @@
 - [ref](http://cs.stackexchange.com/questions/21460/prove-queue-automaton-is-equivalent-to-turing-machine)
 
 ![](../figs/3-14.PNG)
+
+### 3.15, 3.16
+- [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework1Solution.pdf)
