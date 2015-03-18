@@ -5,6 +5,9 @@
 
 ![](../figs/3-10.PNG)
 
+### 3.11
+- check textbook page-165
+
 ### 3.12
 - [ref](http://soltys.cs.csuci.edu/homepage/cs2mj3-f10/t5.pdf)
 
