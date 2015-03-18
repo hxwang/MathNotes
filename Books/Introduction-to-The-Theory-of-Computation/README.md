@@ -10,7 +10,7 @@
 |Chap 1| [Automata and Languages](file/chap1.md)| 3/8/2015 - 3/10/2015|
 |Chap 2| [Context-Free Languages](file/chap2.md)| 3/10/2015 - 3/10/2015 |
 |Chap 3| [The Church-Turing Thesis](file/chap3.md)| 3/11/2015-3/11/2015|
-|Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/26/2015 |
+|Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/16/2015 |
 
 ### Exercise Answer
 |Chapter | Contents|
