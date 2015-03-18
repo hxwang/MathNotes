@@ -1,5 +1,10 @@
 ## Chap 3 Answer
 
+### 3.10
+- [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln07.pdf)
+
+![](../figs/3-10.PNG)
+
 ### 3.12
 - [ref](http://soltys.cs.csuci.edu/homepage/cs2mj3-f10/t5.pdf)
 
