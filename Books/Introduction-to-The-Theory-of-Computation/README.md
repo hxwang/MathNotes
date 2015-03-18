@@ -13,4 +13,4 @@
 |Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/16/2015 |
 
 ### Exercise Answer
-- [Chap3]
+- [Chap3](file/ansChap3.md)
