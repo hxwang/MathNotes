@@ -32,3 +32,6 @@
 - [ref](http://suraj.lums.edu.pk/~cs311w05/quiz/Quiz11Sec2Sol.pdf)
 
 ![](../figs/3-20.PNG)
+
+### 3.21
+- [ref](http://math.stackexchange.com/questions/425378/showing-that-a-root-x-0-of-a-polynomial-is-bounded-by-x-0n1-cdot-c-rm)
