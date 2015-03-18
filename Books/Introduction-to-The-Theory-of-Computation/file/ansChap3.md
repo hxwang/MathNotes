@@ -35,3 +35,6 @@
 
 ### 3.21
 - [ref](http://math.stackexchange.com/questions/425378/showing-that-a-root-x-0-of-a-polynomial-is-bounded-by-x-0n1-cdot-c-rm)
+
+### 3.22
+- [ref](http://www.cs.ucf.edu/courses/cot4210/fall04/answers/hw5sol.pdf)
