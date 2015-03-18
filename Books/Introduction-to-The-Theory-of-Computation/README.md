@@ -13,6 +13,4 @@
 |Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/16/2015 |
 
 ### Exercise Answer
-|Chapter | Contents|
-|:----|:----|
-|Chap 3| [3.12,3.13](http://www.cs.ucf.edu/courses/cot4210/fall04/answers/hw6sol.pdf)|
+- [Chap3]
