@@ -15,6 +15,11 @@
 ### 2.21
 - [ref](http://staffwww.dcs.shef.ac.uk/people/J.Marshall/alc/studyguides/Selected_Solutions_2.pdf)
 
+### 2.22
+- [ref](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCQQFjAB&url=http%3A%2F%2Fis.cs.nthu.edu.tw%2Fcourse%2F2008Fall%2FCT537100%2Fsol%2Fhw_sol_part.doc&ei=UjALVf-lCMHYgwTbm4LYDQ&usg=AFQjCNHA2EOWyXjUQ6chZQhqIZWhEjZ_Mw&sig2=p_Ap8r7vzOtyeEXFZVRh4Q&bvm=bv.88528373,d.eXY&cad=rjt)
+
+![](../figs/2-22.PNG)
+
 ### 2.25
 - [short explain](http://kuldeepfreek.blogspot.com/2013/10/sipser-225-cfls-are-closed-under-suffixa.html)
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s09sol.pdf)
