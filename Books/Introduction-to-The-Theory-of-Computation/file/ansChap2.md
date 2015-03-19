@@ -14,4 +14,4 @@
 ### 2.35
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
-![](figs/2-35.PNG)
+![](../figs/2-35.PNG)
