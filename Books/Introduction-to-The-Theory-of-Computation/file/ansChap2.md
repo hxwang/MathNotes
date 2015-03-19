@@ -10,3 +10,8 @@
 ### 2.25
 - [short explain](http://kuldeepfreek.blogspot.com/2013/10/sipser-225-cfls-are-closed-under-suffixa.html)
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s09sol.pdf)
+
+### 2.35
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
+
+![](figs/2-35.PNG)
