@@ -15,3 +15,8 @@
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
 ![](../figs/2-35.PNG)
+
+### 2.44
+- [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
+
+![](../figs/2-44.PNG)
