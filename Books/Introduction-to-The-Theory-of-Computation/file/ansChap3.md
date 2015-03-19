@@ -1,5 +1,8 @@
 ## Chap 3 Answer
 
+### 3.4
+- [ref](http://www.tcs.fudan.edu.cn/rudolf/Courses/Theory/Theory11/FAQ/faq06.html)
+
 ### 3.10
 - [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln07.pdf)
 
