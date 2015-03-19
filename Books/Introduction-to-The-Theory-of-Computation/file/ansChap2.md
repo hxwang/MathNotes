@@ -23,6 +23,9 @@
 ### 2.23
 - [clear explain](http://kuldeepfreek.blogspot.com/2013/10/223-let-d-xy-xy-01-x-y-but-x-y-show.html)
 
+### 2.24
+- [ref](http://homepage.cs.uiowa.edu/~hzhang/c135/HW2ans.pdf)
+
 ### 2.25
 - [short explain](http://kuldeepfreek.blogspot.com/2013/10/sipser-225-cfls-are-closed-under-suffixa.html)
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s09sol.pdf)
