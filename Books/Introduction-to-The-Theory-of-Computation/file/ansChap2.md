@@ -30,6 +30,11 @@
 - [short explain](http://kuldeepfreek.blogspot.com/2013/10/sipser-225-cfls-are-closed-under-suffixa.html)
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s09sol.pdf)
 
+### 2.27
+- [ref](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&ved=0CEsQFjAI&url=http%3A%2F%2Fclasses.engr.oregonstate.edu%2Feecs%2Fsummer2011%2Fcs321%2Fhw4sol_part1.doc&ei=D14LVdrEG8mUNseWgrAG&usg=AFQjCNGlmvOz_rSBd00WPKrIPzQ49HJFuw&sig2=uWl3H1FmxOQVv87cBBYSNQ&bvm=bv.88528373,d.eXY&cad=rjt)
+
+![](../figs/2-27.PNG)
+
 ### 2.35
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
