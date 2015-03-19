@@ -8,6 +8,11 @@
 
 ![](../figs/3-6.PNG)
 
+### 3.7
+- [ref](http://www.public.asu.edu/~ccolbou/src/355hw5s09sol.pdf)
+
+![](../figs/3-7.PNG)
+
 ### 3.10
 - [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln07.pdf)
 
