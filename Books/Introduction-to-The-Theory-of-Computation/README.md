@@ -13,6 +13,6 @@
 |Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/16/2015 |
 
 ### Exercise Answer
-- [Chap1](file.ansChap1.md)
+- [Chap1](file/ansChap1.md)
 - [Chap2](file/ansChap2.md)
 - [Chap3](file/ansChap3.md)
