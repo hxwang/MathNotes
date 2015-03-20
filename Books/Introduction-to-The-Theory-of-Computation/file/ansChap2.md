@@ -66,6 +66,13 @@
 
 ![](../figs/2-38.PNG)
 
+===
+
+### 2.40
+- [ref](http://courses.cs.washington.edu/courses/cse322/10sp/final-solutions.pdf)
+
+![](../figs/2-40.PNG)
+
 ### 2.44
 - [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
 
