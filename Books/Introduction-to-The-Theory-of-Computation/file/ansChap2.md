@@ -1,5 +1,10 @@
 ## Chap 2
 
+### 2.10
+- [ref](http://staffwww.dcs.shef.ac.uk/people/J.Marshall/alc/studyguides/Selected_Solutions_2.pdf)
+
+![](../figs/2-10.PNG)
+
 ### 2.18
 - check book page-135
 
