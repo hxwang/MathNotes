@@ -46,6 +46,11 @@
 
 =====
 
+### 1.49
+- [ref](http://www.enriqueareyan.com/sites/default/files/math/B501%20Theory%20of%20Computing/Resources/MidTermExampleTest.pdf)
+
+![](../figs/1-49.PNG)
+
 ### 1.54
 - [ref](https://courses.engr.illinois.edu/cs373/fa2010/Problem_Sets/hw4sol.pdf)
 
