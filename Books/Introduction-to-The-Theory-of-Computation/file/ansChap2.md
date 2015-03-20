@@ -35,6 +35,11 @@
 
 ![](../figs/2-27.PNG)
 
+### 2.28
+- [ref](http://www.stolerman.net/studies/cs525/cs525_ch02_preparation.pdf)
+
+![](../figs/2-28.PNG)
+
 ### 2.35
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
