@@ -45,6 +45,11 @@
 
 ![](../figs/2-28.PNG)
 
+### 2.31
+- [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s11sol.pdf)
+
+![](../figs/2-31.PNG)
+
 ### 2.35
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
