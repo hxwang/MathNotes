@@ -73,6 +73,11 @@
 
 ![](../figs/2-40.PNG)
 
+===
+
+### 2.43
+- use w = 1p\#1p-1\#1p-2\#...\#12\#1\# ε   to pump
+
 ### 2.44
 - [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
 
