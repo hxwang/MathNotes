@@ -1,5 +1,12 @@
 ## Chap1 
 
+### 1.31
+- [ref](http://www.public.asu.edu/~ccolbou/src/355hw2s11sol.pdf)
+
+![](../figs/1-31.PNG)
+
+=======
+
 ### 1.40
 - [ref](http://www.eecs.berkeley.edu/~luca/cs172-07/solutions/sol2.pdf)
 
