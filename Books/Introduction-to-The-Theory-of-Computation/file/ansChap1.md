@@ -7,6 +7,14 @@
 
 =======
 
+### 1.32
+- [ref](https://courses.engr.illinois.edu/cs373/fa2010/Problem_Sets/hw1sol.pdf)
+
+![](../figs/1-32.PNG)
+
+=======
+
+
 ### 1.40
 - [ref](http://www.eecs.berkeley.edu/~luca/cs172-07/solutions/sol2.pdf)
 
