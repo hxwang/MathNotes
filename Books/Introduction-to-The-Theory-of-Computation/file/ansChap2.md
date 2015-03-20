@@ -5,6 +5,12 @@
 
 ![](../figs/2-10.PNG)
 
+### 2.14
+- [ref](https://cs314pnu.files.wordpress.com/2014/04/ch2_tutorial1.pdf)
+
+![](../figs/2-14.PNG)
+
+
 ### 2.18
 - check book page-135
 
