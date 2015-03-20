@@ -1,5 +1,11 @@
 ## Chap1 
 
+### 1.40
+- [ref](http://www.eecs.berkeley.edu/~luca/cs172-07/solutions/sol2.pdf)
+
+![](../figs/1-40.PNG)
+
+=====
 ### 1.41
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign1ans.pdf)
 
