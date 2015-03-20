@@ -34,6 +34,13 @@
 ![](../figs/1-42-b.PNG)
 =====
 
+### 1.45
+- [ref](http://www.eecs.berkeley.edu/~luca/cs172-07/solutions/practicefinal-sol.pdf)
+
+![](../figs/1-45.PNG)
+
+=====
+
 ### 1.46
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw2s11sol.pdf)
 
