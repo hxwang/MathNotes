@@ -4,13 +4,13 @@
 - Note: text book for course GMU CS600
 
 ### Contents
-|Chapter | Contents| Status|
-|:----|:----|:----|
-|Chap 0| [Introduction](file/chap0.md)| 02/20/2015 - 02/20/2015|
-|Chap 1| [Automata and Languages](file/chap1.md)| 3/8/2015 - 3/10/2015|
-|Chap 2| [Context-Free Languages](file/chap2.md)| 3/10/2015 - 3/10/2015 |
-|Chap 3| [The Church-Turing Thesis](file/chap3.md)| 3/11/2015-3/11/2015|
-|Chap 4| [Decidability](file/chap4.md)| 3/14/2015 - 3/16/2015 |
+|Chapter | Contents| 
+|:----|:----|
+|Chap 0| [Introduction](file/chap0.md)| 
+|Chap 1| [Automata and Languages](file/chap1.md)| 
+|Chap 2| [Context-Free Languages](file/chap2.md)| 
+|Chap 3| [The Church-Turing Thesis](file/chap3.md)| 
+|Chap 4| [Decidability](file/chap4.md)| 
 
 ### Exercise Answer
 - [Chap1](file/ansChap1.md)
