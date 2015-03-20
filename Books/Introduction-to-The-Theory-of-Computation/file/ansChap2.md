@@ -61,6 +61,11 @@
 
 ![](../figs/2-35.PNG)
 
+### 2.38
+- [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework5.pdf)
+
+![](../figs/2-38.PNG)
+
 ### 2.44
 - [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
 
