@@ -1,5 +1,10 @@
 ## Chap 2
 
+### 2.2
+- [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln06.pdf)
+
+![](../figs/2-2.PNG)
+
 ### 2.10
 - [ref](http://staffwww.dcs.shef.ac.uk/people/J.Marshall/alc/studyguides/Selected_Solutions_2.pdf)
 
