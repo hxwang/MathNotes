@@ -1,5 +1,11 @@
 ## Chap1 
 
+### 1.41
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign1ans.pdf)
+
+![](../figs/1-41.PNG)
+
+=====
 ### 1.42
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign1ans.pdf)
 
