@@ -78,6 +78,9 @@
 ### 2.42
 - use w = 1p\#1p-1\#1p-2\#...\#12\#1\# ε   to pump
 
+### 2.43
+- [ref](http://www.scribd.com/doc/256588843/2030-Midterm-So-Lns-1#scribd)
+
 ### 2.44
 - [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
 
