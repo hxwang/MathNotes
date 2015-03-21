@@ -90,3 +90,10 @@
 - [ref](http://www.cs.cmu.edu/~lblum/flac/Solutions/Sol4.pdf)
 
 ![](../figs/2-44.PNG)
+
+====
+
+### 2.45
+- [ref](http://www.public.asu.edu/~ccolbou/src/355hw4s11sol.pdf)
+
+![](../figs/2-45.PNG)
