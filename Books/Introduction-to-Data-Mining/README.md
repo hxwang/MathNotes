@@ -8,4 +8,4 @@
 |Chapter| Contents| Status|
 |:---|:----|:----|
 |Chap 4| [Classification](file/chap4.md)| 03/21/2015-03/22/2015|
-|Chap 5| Classification: Alternative Techniques| 03/22/2015-ing|
+|Chap 5| [Classification: Alternative Techniques](file/chap5.md)| 03/22/2015-ing|
