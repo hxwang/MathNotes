@@ -7,4 +7,5 @@
 
 |Chapter| Contents| Status|
 |:---|:----|:----|
-|Chap 4| Classification| |
+|Chap 4| Classification| 03/21/2015-03/22/2015|
+|Chap 5| Classification: Alternative Techniques| 03/22/2015-ing|
