@@ -1,4 +1,4 @@
-## Classification: Basic Concepts, Decision Trees, and Model Evaluation
+## Chap 4 Classification: Basic Concepts, Decision Trees, and Model Evaluation
 
 ### Contents
 - 4.1 Preliminaries
