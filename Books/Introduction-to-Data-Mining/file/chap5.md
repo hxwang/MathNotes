@@ -35,3 +35,9 @@
   - 5.6.5 Boosting
   - 5.6.6 Random Forests
   - 5.6.7 Empirical Comparison among ensemable methods
+- 5.7 Class Imbalance Problem
+  - 5.7.1 Alternative Metrics
+  - 5.7.2 The Receiver Operating Characteristic Curve
+  - 5.7.3 Cost-sensitive Learning
+  - 5.7.4 Sampling-Based Approaches
+- 5.8 Multiclass Problem
