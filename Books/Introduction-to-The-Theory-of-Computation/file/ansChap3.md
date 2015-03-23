@@ -13,6 +13,9 @@
 
 ![](../figs/3-7.PNG)
 
+### 3.9
+- [ref](http://courses.cs.washington.edu/courses/cse322/10sp/final-solutions.pdf)
+
 ### 3.10
 - [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln07.pdf)
 
