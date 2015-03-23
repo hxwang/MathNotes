@@ -4,6 +4,12 @@
 
 ---
 
+### 4.2, 4.3
+- [ref](http://www.cse.buffalo.edu/courses/cse396/content/hwSol-7.pdf)
+
+### 4.4
+- [ref](http://cseweb.ucsd.edu/~mihir/cse105/ss3.pdf)
+
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
 - [shorter explain](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
