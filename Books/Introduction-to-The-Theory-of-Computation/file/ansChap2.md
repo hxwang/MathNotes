@@ -61,6 +61,9 @@
 
 ![](../figs/2-31.PNG)
 
+### 2.33
+- [ref](http://wenku.baidu.com/view/319b8af79e314332396893e9)
+
 ### 2.35
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign2ans.pdf)
 
