@@ -3,6 +3,9 @@
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
 
+### 4.15
+- [ref](http://www.math-cs.gordon.edu/courses/cps220/Notes/example4.15.pdf)
+
 ### 4.19
 - [ref](http://www.cs.bu.edu/fac/hwxi/academic/courses/eces-670/HANDOUTS/solution8.pdf)
 
