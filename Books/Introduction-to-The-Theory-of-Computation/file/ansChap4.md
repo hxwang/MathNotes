@@ -38,3 +38,6 @@
 ### 4.22
 - [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
 - interesting
+
+### 4.26
+- [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
