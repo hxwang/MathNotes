@@ -2,6 +2,10 @@
 
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
+- [shorter explain](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
+
+### 4.12
+- [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
 
 ### 4.15
 - [ref](http://www.math-cs.gordon.edu/courses/cps220/Notes/example4.15.pdf)
