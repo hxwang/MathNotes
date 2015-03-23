@@ -34,3 +34,7 @@
 
 ### 4.21
 - check book page 188.
+
+### 4.22
+- [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
+- interesting
