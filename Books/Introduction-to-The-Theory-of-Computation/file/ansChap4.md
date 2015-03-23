@@ -13,6 +13,9 @@
 ### 4.6
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
 
+### 4.7
+- [ref](http://staffwww.dcs.shef.ac.uk/people/J.Marshall/alc/studyguides/Selected_Solutions_3.pdf)
+
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
 - [shorter explain](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
