@@ -1,4 +1,9 @@
 ## Chap 4
+---
+
+- [ref1](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf): contains problem 
+
+---
 
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
