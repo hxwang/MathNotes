@@ -54,3 +54,6 @@
 
 ### 4.27
 - [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
+
+### 4.28
+- [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2009/andre/A2.pdf)
