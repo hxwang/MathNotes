@@ -14,6 +14,10 @@
 - [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
 - why enumerate up to n*m?
 
+### 4.18
+- [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
+
+
 ### 4.19
 - [ref](http://www.cs.bu.edu/fac/hwxi/academic/courses/eces-670/HANDOUTS/solution8.pdf)
 
