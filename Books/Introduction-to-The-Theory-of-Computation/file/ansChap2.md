@@ -69,7 +69,7 @@
 
 ![](../figs/2-35.PNG)
 
-### 2.38
+### 2.39
 - [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework5.pdf)
 
 ![](../figs/2-38.PNG)
