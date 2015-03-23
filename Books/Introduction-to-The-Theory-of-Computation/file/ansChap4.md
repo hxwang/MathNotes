@@ -46,6 +46,9 @@
 ### 4.24
 - [ref](http://www.cs.nthu.edu.tw/~wkhon/toc07-assignments/assign3ans.pdf)
 
+### 4.25
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign3ans.pdf)
+
 ### 4.26
 - [ref](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
 
