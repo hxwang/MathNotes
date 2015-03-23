@@ -10,6 +10,9 @@
 ### 4.4
 - [ref](http://cseweb.ucsd.edu/~mihir/cse105/ss3.pdf)
 
+### 4.6
+- [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
+
 ### 4.10
 - [ref](http://www.public.asu.edu/~ccolbou/src/355hw6s09sol.pdf)
 - [shorter explain](http://www.stolerman.net/studies/cs525/cs525_ch04_preparation.pdf)
