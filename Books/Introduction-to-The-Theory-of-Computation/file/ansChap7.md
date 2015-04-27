@@ -27,3 +27,8 @@
 - [ref](http://cseweb.ucsd.edu/classes/fa01/cse105_B/hw3ans.pdf)
 
 ![](../figs/7-7.PNG)
+
+#### 7.9
+- [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln11.pdf)
+
+![](../figs/7-9.PNG)
