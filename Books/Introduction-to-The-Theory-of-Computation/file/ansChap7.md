@@ -20,4 +20,5 @@
 
 #### 7.6
 - [ref](http://cseweb.ucsd.edu/classes/fa01/cse105_B/hw3ans.pdf)
+
 ![](../figs/7-6.PNG)
