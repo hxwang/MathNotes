@@ -11,6 +11,7 @@
 |Chap 2| [Context-Free Languages](file/chap2.md)| 
 |Chap 3| [The Church-Turing Thesis](file/chap3.md)| 
 |Chap 4| [Decidability](file/chap4.md)| 
+|Chap 7| [Time Complexity](file/chap7.md)
 
 ### Exercise Answer
 - [Chap1](file/ansChap1.md)
