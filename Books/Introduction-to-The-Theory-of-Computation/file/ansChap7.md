@@ -67,6 +67,13 @@
 
 ---
 
+#### 7.12
+- [ref](http://people.cs.nctu.edu.tw/~sctsai/fc/hw/hw6_sol.pdf)
+
+![](../figs/7-12.PNG)
+
+----
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
