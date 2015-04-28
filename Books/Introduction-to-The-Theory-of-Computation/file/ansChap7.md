@@ -103,6 +103,15 @@
 
 ----
 
+#### 7.20
+- [a](https://web.njit.edu/~marvin/cs341/hw/hwsoln13.pdf)
+- [b](http://www.phil.uu.nl/logcom/jaar/2011-2012/aantekeningen/uitwerkingen-opgaven-sipser.pdf)
+
+![](../figs/7-20-a.PNG)
+![](../figs/7-20-b.PNG)
+
+----
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
