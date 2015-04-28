@@ -17,12 +17,13 @@
   - the SAT is satisfiable iff the bottom of the box canbe completed covered.
   - Note: a hole is covered indicates a clause is satisfied.
   
+----
+
 #### 7.28
 ![](../figs/7-28.PNG)
 ----
 
-#### 7.29
-![](../figs/7-29.PNG)
+
 
 ---
 
@@ -48,3 +49,6 @@
 - [ref](https://web.njit.edu/~marvin/cs341/hw/hwsoln11.pdf)
 
 ![](../figs/7-9.PNG)
+
+#### 7.29
+![](../figs/7-29.PNG)
