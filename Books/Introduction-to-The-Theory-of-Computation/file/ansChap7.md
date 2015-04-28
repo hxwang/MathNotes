@@ -19,6 +19,13 @@
   
 ----
 
+#### 7.27
+- [ref](http://cgi.csc.liv.ac.uk/~igor/COMP309/3CP.pdf)
+
+![](../figs/7-27.PNG)
+
+----
+
 #### 7.28
 ![](../figs/7-28.PNG)
 ----
