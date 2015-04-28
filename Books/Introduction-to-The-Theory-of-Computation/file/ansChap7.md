@@ -81,6 +81,13 @@
 
 ----
 
+#### 7.16
+- [ref](http://www.cs.virginia.edu/~evans/cs3102-s10/ps/ps6/ps6-comments.pdf)
+
+![](../figs/7-16.PNG)
+
+----
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
