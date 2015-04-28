@@ -96,6 +96,12 @@
 
 ----
 
+#### 7.19
+- [ref](http://www.phil.uu.nl/logcom/jaar/2011-2012/aantekeningen/uitwerkingen-opgaven-sipser.pdf)
+
+![](../figs/7-19.PNG)
+
+----
 
 #### 7.29
 ![](../figs/7-29.PNG)
