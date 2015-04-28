@@ -63,6 +63,10 @@
 #### 7.11
 - [ref](http://web.cse.ohio-state.edu/~lrademac/Sp15_6321/ps4sol.pdf)
 
+![](../figs/7-11.PNG)
+
+---
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
