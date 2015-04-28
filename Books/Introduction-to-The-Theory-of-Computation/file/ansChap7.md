@@ -112,6 +112,13 @@
 
 ----
 
+#### 7.21
+- [ref](ftp://ftp.cis.upenn.edu/pub/cis511/public_html/Spring07/sol5.pdf)
+
+![](../figs/7-21.PNG)
+
+----
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
