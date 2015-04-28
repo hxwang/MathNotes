@@ -1,6 +1,12 @@
 ## Chap 7: Time Complexity
 
 ### Homeworks
+#### 7.24
+- [ref](http://people.cs.nctu.edu.tw/~sctsai/fc/hw/hw6_sol.pdf)
+
+![](../figs/7-24.PNG)
+----
+
 #### 7.28
 ![](../figs/7-28.PNG)
 ----
