@@ -88,6 +88,15 @@
 
 ----
 
+#### 7.17
+- [ref](http://www.cs.berkeley.edu/~luca/cs172-07/solutions/sol6.pdf)
+- [ref1](http://people.cs.aau.dk/~srba/courses/tutorials-CC-10/t12-sol.pdf)
+
+![](../figs/7-17.PNG)
+
+----
+
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
