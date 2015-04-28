@@ -7,6 +7,16 @@
 ![](../figs/7-24.PNG)
 ----
 
+#### 7.26
+- [ref](https://github.com/sstephens/sstephens1/blob/master/dev/comp_theory/asst8/asst8c.tex)
+- My answer:
+  - create a card for each variable, for a varianble x
+    - if the i-th clause contains x, then we have no holes in the left position in the i-th row, otherwise, we punch a hole;
+    - if the i-th clause contains negative x, then we have no holes in the right position, otherwise, we punch a hole in the right position.
+  - create an additional cards with all left rows punched with holes.
+  - the SAT is satisfiable iff the bottom of the box canbe completed covered.
+  - Note: a hole is covered indicates a clause is satisfied.
+  
 #### 7.28
 ![](../figs/7-28.PNG)
 ----
