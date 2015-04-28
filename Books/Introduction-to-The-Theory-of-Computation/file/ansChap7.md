@@ -56,6 +56,9 @@
 
 ![](../figs/7-9.PNG)
 
+#### 7.10
+- [ref](http://math.stackexchange.com/questions/28194/how-to-show-that-all-dfa-is-in-p)
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
