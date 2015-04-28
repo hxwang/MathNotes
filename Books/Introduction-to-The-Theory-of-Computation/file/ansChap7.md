@@ -74,6 +74,13 @@
 
 ----
 
+#### 7.14
+- [ref](http://tuvalu.santafe.edu/~moore/theory/homework5solutions.pdf)
+
+![](../figs/7-14.PNG)
+
+----
+
 #### 7.29
 ![](../figs/7-29.PNG)
 
