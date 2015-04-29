@@ -132,3 +132,10 @@
 
 #### 7.30
 - [ref](http://vorsgald.livejournal.com/39051.html)
+
+----
+
+#### 7.32
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign5ans.pdf)
+
+![](../figs/7-32.PNG)
