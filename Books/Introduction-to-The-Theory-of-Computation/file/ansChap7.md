@@ -142,3 +142,9 @@
 
 ----
 
+#### 7.33
+- [ref](http://www.cs.berkeley.edu/~luca/cs172-07/practice2-sol.pdf)
+
+![](../figs/7-33.PNG)
+
+----
