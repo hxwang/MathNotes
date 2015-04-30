@@ -181,3 +181,10 @@
 
 ----
 
+#### 7.39
+- confused!
+- [ref](http://www.csie.ntu.edu.tw/~b92043/homework/%E4%B8%89%E5%B9%B4%E7%B4%9A/automata/s8.pdf)
+
+![](../figs/7-39.PNG)
+
+----
