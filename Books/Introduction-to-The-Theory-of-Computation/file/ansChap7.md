@@ -187,3 +187,10 @@
 ![](../figs/7-39.PNG)
 
 ----
+
+#### 7.40
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign5ans.pdf)
+
+![](../figs/7-40.PNG)
+
+----
