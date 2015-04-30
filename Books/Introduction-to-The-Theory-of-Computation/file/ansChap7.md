@@ -164,3 +164,11 @@
 ![](../figs/7-35.PNG)
 
 ----
+
+#### 7.36
+- confused!
+- [ref](http://cs.brown.edu/courses/gs019/asgn/hw4.sol.pdf)
+
+![](../figs/7-36.PNG)
+
+----
