@@ -148,3 +148,11 @@
 ![](../figs/7-33.PNG)
 
 ----
+
+#### 7.34
+- confused!
+- [ref](https://people.cs.umass.edu/~barring/cs311/exams/finpracsol.html)
+
+![](../figs/7-34.PNG)
+
+----
