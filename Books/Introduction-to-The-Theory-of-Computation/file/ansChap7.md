@@ -204,3 +204,7 @@
 
 #### 7.42
 - [ref](http://www.dei.unipd.it/~geppo/AA/DOCS/2SAT.pdf)
+
+
+#### 7.44
+- [ref](http://soltys.cs.csuci.edu/blog/wp-content/oldpage/se4i03-f05/test4.pdf)
