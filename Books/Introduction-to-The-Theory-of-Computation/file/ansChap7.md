@@ -201,3 +201,6 @@
 ![](../figs/7-41.PNG)
 
 ----
+
+#### 7.42
+- [ref](http://www.dei.unipd.it/~geppo/AA/DOCS/2SAT.pdf)
