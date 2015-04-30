@@ -156,3 +156,11 @@
 ![](../figs/7-34.PNG)
 
 ----
+
+#### 7.35
+- confused!
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign5ans.pdf)
+
+![](../figs/7-35.PNG)
+
+----
