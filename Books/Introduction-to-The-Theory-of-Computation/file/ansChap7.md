@@ -194,3 +194,10 @@
 ![](../figs/7-40.PNG)
 
 ----
+
+#### 7.41
+- [ref](http://ezekiel.vancouver.wsu.edu/~cs516/final/exam/final-soln.pdf)
+
+![](../figs/7-41.PNG)
+
+----
