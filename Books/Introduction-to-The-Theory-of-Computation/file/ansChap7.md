@@ -172,3 +172,12 @@
 ![](../figs/7-36.PNG)
 
 ----
+
+#### 7.37
+- confused!
+- [ref](http://ezekiel.vancouver.wsu.edu/~cs516/final/exam/2009/final-soln.pdf)
+
+![](../figs/7-37.PNG)
+
+----
+
