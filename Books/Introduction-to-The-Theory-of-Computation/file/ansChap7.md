@@ -209,3 +209,13 @@
 #### 7.44
 - [ref](http://soltys.cs.csuci.edu/blog/wp-content/oldpage/se4i03-f05/test4.pdf)
 - [ref1](http://web.cse.ohio-state.edu/~lrademac/Sp15_6321/ps4sol.pdf)
+
+![](../figs/7-44.PNG)
+
+----
+
+#### 7.45
+- [ref](https://www.cs.princeton.edu/courses/archive/fall03/cs487/hw7sol.pdf)
+- need discussion
+
+![](../figs/7-45.PNG)
