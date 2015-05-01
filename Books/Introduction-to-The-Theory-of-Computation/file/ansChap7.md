@@ -230,3 +230,6 @@
 ![](../figs/7-48.PNG)
 
 ----
+
+#### 7.49
+- [ref](http://people.cs.nctu.edu.tw/~sctsai/fc/hw/hw7_sol.pdf)
