@@ -222,3 +222,11 @@
 
 #### 7.47
 - [ref](http://math.stackexchange.com/questions/84040/does-dtimeon-regular)
+
+
+#### 7.48
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign5ans.pdf)
+
+![](../figs/7-48.PNG)
+
+----
