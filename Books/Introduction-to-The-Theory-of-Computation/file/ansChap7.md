@@ -213,3 +213,7 @@
 ![](../figs/7-44.PNG)
 
 ----
+
+#### 7.45
+- [ref](https://www.cs.princeton.edu/courses/archive/fall03/cs487/hw7sol.pdf)
+- need discussion
