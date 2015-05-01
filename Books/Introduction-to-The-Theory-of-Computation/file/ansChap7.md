@@ -219,3 +219,6 @@
 - need discussion
 
 ![](../figs/7-45.PNG)
+
+#### 7,47
+- [ref](http://math.stackexchange.com/questions/84040/does-dtimeon-regular)
