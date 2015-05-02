@@ -53,3 +53,12 @@
 ![](../figs/5-24.PNG)
 
 -----
+
+
+### Non-Homework
+### 5.30
+- [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
+
+![](../figs/5-30.PNG)
+
+-----
