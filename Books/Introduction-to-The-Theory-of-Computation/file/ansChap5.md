@@ -5,6 +5,7 @@
 
 ### 5.9
 - [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework8.pdf)
+- [better one](https://web.njit.edu/~marvin/cs341/hw/hwsoln09.pdf)
 
 ![](../figs/5-9.PNG)
 
