@@ -11,3 +11,9 @@
 
 -----
 
+### 5.12
+- [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/problemSession2.pdf)
+
+![](../figs/5-12.PNG)
+
+-----
