@@ -24,3 +24,11 @@
 ![](../figs/5-13.PNG)
 
 -----
+
+
+### 5.14
+- [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/problemSession2.pdf)
+
+![](../figs/5-14.PNG)
+
+-----
