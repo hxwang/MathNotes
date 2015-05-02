@@ -39,3 +39,10 @@
 ![](../figs/5-15.PNG)
 
 -----
+
+### 5.23
+- [ref](http://people.cs.nctu.edu.tw/~sctsai/fc/hw/hw5_sol.pdf)
+
+![](../figs/5-23.PNG)
+
+-----
