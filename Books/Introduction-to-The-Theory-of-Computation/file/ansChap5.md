@@ -17,3 +17,10 @@
 ![](../figs/5-12.PNG)
 
 -----
+
+### 5.13
+- [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework2Solution.pdf)
+
+![](../figs/5-13.PNG)
+
+-----
