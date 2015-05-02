@@ -46,3 +46,10 @@
 ![](../figs/5-23.PNG)
 
 -----
+
+### 5.24
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/toc07-assignments/assign4ans.pdf)
+
+![](../figs/5-24.PNG)
+
+-----
