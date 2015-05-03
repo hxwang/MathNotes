@@ -56,6 +56,13 @@
 
 
 ### Non-Homework
+### 5.3
+- [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework8.pdf)
+
+![](../figs/5-3.PNG)
+
+-----
+
 ### 5.30
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
 
