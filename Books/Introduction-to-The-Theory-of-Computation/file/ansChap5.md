@@ -83,3 +83,10 @@
 ![](../figs/5-33.PNG)
 
 -----
+
+### 5.35
+- [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework2Solution.pdf)
+
+![](../figs/5-35.PNG)
+
+-----
