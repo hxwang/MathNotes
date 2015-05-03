@@ -105,6 +105,13 @@
 
 -----
 
+### 5.19
+- [ref](http://people.cs.aau.dk/~srba/courses/tutorials-CC-10/t6-sol.pdf)
+
+![](../figs/5-19.PNG)
+
+-----
+
 ### 5.30
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
 
