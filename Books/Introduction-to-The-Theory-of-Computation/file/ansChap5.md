@@ -112,6 +112,13 @@
 
 -----
 
+### 5.20
+- [no precise](http://web.cs.swarthmore.edu/~adanner/cs46/s14/hw07.pdf)
+
+![](../figs/5-20.PNG)
+
+-----
+
 ### 5.30
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
 
