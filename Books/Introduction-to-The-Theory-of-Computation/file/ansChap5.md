@@ -160,6 +160,13 @@
 
 -----
 
+### 5.31
+- [ref](http://www.ugrad.cs.ubc.ca/~cs421/hw/10/a.pdf)
+
+![](../figs/5-31.PNG)
+
+-----
+
 ### 5.33
 - [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework2Solution.pdf)
 
