@@ -174,6 +174,13 @@
 
 -----
 
+### 5.34
+- [ref](http://www.cs.uml.edu/~kdaniels/courses/304_F09/HW8_Solutions.pdf)
+
+![](../figs/5-34.PNG)
+
+-----
+
 ### 5.35
 - [ref](http://homepage.cs.uiowa.edu/~sriram/131/spring07/homework2Solution.pdf)
 
