@@ -146,6 +146,13 @@
 ### 5.25
 - Any Turing-recognizable but not co-Turing-recognizable language works (or vice versa), such as $A_{TM}$.
 
+### 5.29
+- [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
+
+![](../figs/5-29.PNG)
+
+-----
+
 ### 5.30
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
 
