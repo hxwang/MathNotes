@@ -117,7 +117,7 @@
 
 ![](../figs/5-20-1.PNG)
 
-- [alternative](http://cobweb.cs.uga.edu/~shelby/classes/2670-fall-05/HW9Soln.pdf)
+- [clear!](http://cobweb.cs.uga.edu/~shelby/classes/2670-fall-05/HW9Soln.pdf)
 
 ![](../figs/5-20.PNG)
 
