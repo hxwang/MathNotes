@@ -56,6 +56,13 @@
 
 
 ### Non-Homework
+### 5.1
+- [ref](http://www.cs.uml.edu/~giam/91.304/Spring06/tf11.solns.pdf)
+
+![](../figs/5-1.PNG)
+
+-----
+
 ### 5.3
 - [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework8.pdf)
 
