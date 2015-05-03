@@ -84,6 +84,13 @@
 
 -----
 
+### 5.16
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign4ans.pdf)
+
+![](../figs/5-16.PNG)
+
+-----
+
 ### 5.17
 - [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework8.pdf)
 
