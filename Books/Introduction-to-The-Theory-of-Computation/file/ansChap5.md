@@ -123,6 +123,13 @@
 
 -----
 
+### 5.21
+- [ref](http://www.ugrad.cs.ubc.ca/~cs421/hw/10/a.pdf)
+
+![](../figs/5-21.PNG)
+
+-----
+
 ### 5.30
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
 
