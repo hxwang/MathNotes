@@ -54,6 +54,12 @@
 
 -----
 
+### 5.26
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign4ans.pdf)
+
+![](../figs/5-26.PNG)
+
+-----
 
 ### Non-Homework
 ### 5.1
