@@ -63,6 +63,13 @@
 
 -----
 
+### 5.4
+- [ref](http://people.cs.nctu.edu.tw/~sctsai/fc/hw/hw5_sol.pdf)
+
+![](../figs/5-4.PNG)
+
+-----
+
 ### 5.17
 - [ref](http://cseweb.ucsd.edu/classes/sp06/cse105/homework8.pdf)
 
