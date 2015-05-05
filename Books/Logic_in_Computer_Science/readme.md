@@ -7,5 +7,6 @@
 
 ### Contents
 |Chapter| Contents| Status|
+|:---|:---|:---|
 |Chap 1| Propositional logic| |
 |Chap 2| | |
