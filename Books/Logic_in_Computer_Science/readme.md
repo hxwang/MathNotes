@@ -8,5 +8,5 @@
 ### Contents
 |Chapter| Contents| Status|
 |:---|:---|:---|
-|Chap 1| Propositional logic| |
+|Chap 1| Propositional logic|Done |
 |Chap 2| | |
