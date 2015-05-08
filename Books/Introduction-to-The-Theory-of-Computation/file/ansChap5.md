@@ -54,10 +54,7 @@
 
 -----
 
-### 5.26
-- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign4ans.pdf)
 
-![](../figs/5-26.PNG)
 
 -----
 
@@ -145,6 +142,13 @@
 
 ### 5.25
 - Any Turing-recognizable but not co-Turing-recognizable language works (or vice versa), such as $A_{TM}$.
+
+### 5.26
+- [ref](http://www.cs.nthu.edu.tw/~wkhon/assignments/assign4ans.pdf)
+
+![](../figs/5-26.PNG)
+
+----
 
 ### 5.29
 - [ref](https://www.cs.auckland.ac.nz/~cristian/mfcsdir/cris/2010/tutorials/tut08_Solutions.pdf)
