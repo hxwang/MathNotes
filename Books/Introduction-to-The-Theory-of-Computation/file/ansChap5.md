@@ -155,6 +155,8 @@
 
 ![](../figs/5-29.PNG)
 
+- [alternative approach](https://github.com/ryandougherty/Introduction-to-the-Theory-of-Computation-Solutions/blob/master/chapter5.tex)
+
 -----
 
 ### 5.30
