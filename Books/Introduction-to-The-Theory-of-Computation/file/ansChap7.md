@@ -144,6 +144,7 @@
 #### 7.30
 - [ref](http://vorsgald.livejournal.com/39051.html)
 - [ref2](https://raw.githubusercontent.com/sstephens/sstephens1/master/dev/comp_theory/asst8/asst8d.tex)
+
 ----
 
 #### 7.32
