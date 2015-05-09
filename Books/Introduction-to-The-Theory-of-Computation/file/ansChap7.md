@@ -232,6 +232,11 @@
 
 ![](../figs/7-45.PNG)
 
+---
+
+### 7.46
+- [ref](https://www7.in.tum.de/um/courses/complexity/SS10/exercises/final-sol.pdf)
+
 #### 7.47
 - [ref](http://math.stackexchange.com/questions/84040/does-dtimeon-regular)
 
