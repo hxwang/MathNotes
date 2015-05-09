@@ -77,6 +77,14 @@
 
 ----
 
+### 7.13
+- [ref](http://www.thomasbeatty.com/MATH%20PAGES/ARCHIVES%20-%20EXAMS/Computation/08%20F%20Comp%20Final%20Hints.pdf)
+
+![](../figs/7-13.PNG)
+
+----
+
+
 #### 7.14
 - [ref](http://tuvalu.santafe.edu/~moore/theory/homework5solutions.pdf)
 
