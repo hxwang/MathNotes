@@ -1,3 +1,3 @@
 ## NP-Complete Problems
 
-- [Set Cover]()
+- [Set Cover](./file/set-cover.md)
