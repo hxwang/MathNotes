@@ -26,10 +26,10 @@ Books
 ### Computing Foundation
 | Book Title        | Authors           | Reading status  |
 |:------------- |:-------------|:-----|
-|[Introduction to the Theory of Computation](Introduction-to-The-Theory-of-Computation)| [Michael Sipser](http://www-math.mit.edu/~sipser/) | 02/20/2015- ing| 
+|[Introduction to the Theory of Computation](Introduction-to-The-Theory-of-Computation)| [Michael Sipser](http://www-math.mit.edu/~sipser/) | 02/20/2015- 05/30/2015| 
 |[Logic in Computer Science](./Logic_in_Computer_Science)| MICHAEL HUTH| 05/04/2015-ing|
 
 ### Data Mining
 | Book Title        | Authors           | Reading status  |
 |:------------- |:-------------|:-----|
-|[Introduction to Data Mining](Introduction-to-Data-Mining)| Pang-Ning Tan| 02/24/2015-ing|
+|[Introduction to Data Mining](Introduction-to-Data-Mining)| Pang-Ning Tan| 02/24/2015- 05/30/2015|
