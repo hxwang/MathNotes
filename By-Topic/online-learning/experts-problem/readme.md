@@ -5,3 +5,4 @@
 
 ### With delayed feedback
 - [Online Learning under Delayed Feedback](http://jmlr.org/proceedings/papers/v28/joulani13.pdf), in ICML 2013
+- [On Delayed Prediction of Individual Sequences](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1013136), in Transaction of Information Theory, 2002
