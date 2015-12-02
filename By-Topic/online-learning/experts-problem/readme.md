@@ -1,5 +1,8 @@
 ## Experts problem
 
+### Category
+- [learning with delayed feedback](./file/delayed-feedback.md)
+
 ### References
   - With timely feedback
     - [Learning the Experts for Online Sequence Prediction](http://icml.cc/2012/papers/471.pdf), in ICML 2012
