@@ -1,7 +1,7 @@
 ## Experts problem
 
 ### Category
-- [learning with delayed feedback](./file/delayed-feedback.md)
+- [Learning with delayed feedback](./file/delayed-feedback.md)
 
 ### References
   - With timely feedback
