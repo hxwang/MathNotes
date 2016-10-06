@@ -9,3 +9,5 @@
 the high-k region.
   - Examples: the WWW, the Internet, protein interaction networks, and most
 social and online networks
+- Power laws via preferential attachment
+ 
